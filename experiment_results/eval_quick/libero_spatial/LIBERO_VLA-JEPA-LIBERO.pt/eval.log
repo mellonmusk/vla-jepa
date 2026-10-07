@@ -1,0 +1,372 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+10/06 [12:31:45] INFO     | >> Arguments: {                 eval_libero.py:77
+                              "host": "127.0.0.1",                           
+                              "port": 15083,                                 
+                              "task_suite_name":                             
+                          "libero_spatial",                                  
+                              "num_steps_wait": 10,                          
+                              "num_trials_per_task": 2,                      
+                              "task_stride": 1,                              
+                              "category_value": "Background                  
+                          Textures",                                         
+                              "video_out_path":                              
+                          "results/libero_spatial/LIBERO_VL                  
+                          A-JEPA-LIBERO.pt",                                 
+                              "seed": 7,                                     
+                              "pretrained_path":                             
+                          "/workspace/models/VLA-JEPA/LIBER                  
+                          O/checkpoints/VLA-JEPA-LIBERO.pt"                  
+                          ,                                                  
+                              "post_process_action": true,                   
+                              "with_state": "true",                          
+                              "job_name": "test"                             
+                          }                                                  
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                 INFO     | >> Task suite: libero_spatial   eval_libero.py:89
+                 INFO     | >> Waiting for      websocket_policy_client.py:34
+                          server at                                          
+                          ws://127.0.0.1:15083.                              
+                          ..                                                 
+*** policy_setup: franka, unnorm_key: None ***
+                 INFO     | >> [*] Loading from local checkpoint tools.py:169
+                          path                                               
+                          `/workspace/models/VLA-JEPA/LIBERO/che             
+                          ckpoints/VLA-JEPA-LIBERO.pt`                       
+                 INFO     | >> [*] Loading from local checkpoint tools.py:169
+                          path                                               
+                          `/workspace/models/VLA-JEPA/LIBERO/che             
+                          ckpoints/VLA-JEPA-LIBERO.pt`                       
+  0%|          | 0/10 [00:00<?, ?it/s][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+/workspace/LIBERO/libero/libero/benchmark/__init__.py:164: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_states = torch.load(init_states_path)
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/2 [00:00<?, ?it/s][A10/06 [12:31:51] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          between the plate and the                          
+                          ramekin and place it on the                        
+                          plate                                              
+10/06 [12:31:55] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/06 [12:32:05] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 1                                             
+10/06 [12:32:06] INFO     | >> # successes: 1 (100.0%)     eval_libero.py:256
+
+ 50%|█████     | 1/2 [00:14<00:14, 14.39s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          between the plate and the                          
+                          ramekin and place it on the                        
+                          plate                                              
+10/06 [12:32:07] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/06 [12:32:11] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 2                                             
+                 INFO     | >> # successes: 2 (100.0%)     eval_libero.py:256
+
+100%|██████████| 2/2 [00:19<00:00,  9.22s/it][A100%|██████████| 2/2 [00:19<00:00,  9.99s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          1.0                                                
+ 10%|█         | 1/10 [00:25<03:51, 25.70s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+/workspace/LIBERO/libero/libero/benchmark/__init__.py:164: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_states = torch.load(init_states_path)
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/2 [00:00<?, ?it/s][A10/06 [12:32:12] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the ramekin and place it                   
+                          on the plate                                       
+10/06 [12:32:14] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/06 [12:32:19] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 3                                             
+                 INFO     | >> # successes: 3 (100.0%)     eval_libero.py:256
+
+ 50%|█████     | 1/2 [00:07<00:07,  7.00s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the ramekin and place it                   
+                          on the plate                                       
+10/06 [12:32:21] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/06 [12:32:26] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 4                                             
+                 INFO     | >> # successes: 4 (100.0%)     eval_libero.py:256
+
+100%|██████████| 2/2 [00:13<00:00,  6.68s/it][A100%|██████████| 2/2 [00:13<00:00,  6.73s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          1.0                                                
+ 20%|██        | 2/10 [00:40<02:34, 19.27s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/2 [00:00<?, ?it/s][A10/06 [12:32:27] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          from table center and place it                     
+                          on the plate                                       
+10/06 [12:32:29] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/06 [12:32:34] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 5                                             
+                 INFO     | >> # successes: 5 (100.0%)     eval_libero.py:256
+
+ 50%|█████     | 1/2 [00:06<00:06,  6.34s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          from table center and place it                     
+                          on the plate                                       
+10/06 [12:32:35] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/06 [12:32:40] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 6                                             
+                 INFO     | >> # successes: 6 (100.0%)     eval_libero.py:256
+
+100%|██████████| 2/2 [00:12<00:00,  6.27s/it][A100%|██████████| 2/2 [00:12<00:00,  6.28s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          1.0                                                
+ 30%|███       | 3/10 [00:54<01:57, 16.80s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/2 [00:00<?, ?it/s][A10/06 [12:32:41] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the cookie box and place it on                     
+                          the plate                                          
+10/06 [12:32:42] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/06 [12:32:47] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 7                                             
+                 INFO     | >> # successes: 7 (100.0%)     eval_libero.py:256
+
+ 50%|█████     | 1/2 [00:06<00:06,  6.40s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the cookie box and place it on                     
+                          the plate                                          
+10/06 [12:32:49] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/06 [12:32:53] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 8                                             
+                 INFO     | >> # successes: 8 (100.0%)     eval_libero.py:256
+
+100%|██████████| 2/2 [00:12<00:00,  6.04s/it][A100%|██████████| 2/2 [00:12<00:00,  6.10s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          1.0                                                
+ 40%|████      | 4/10 [01:07<01:32, 15.49s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/2 [00:00<?, ?it/s][A10/06 [12:32:55] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl in                    
+                          the top drawer of the wooden                       
+                          cabinet and place it on the                        
+                          plate                                              
+10/06 [12:32:56] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/06 [12:33:03] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 9                                             
+                 INFO     | >> # successes: 9 (100.0%)     eval_libero.py:256
+
+ 50%|█████     | 1/2 [00:08<00:08,  8.24s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl in                    
+                          the top drawer of the wooden                       
+                          cabinet and place it on the                        
+                          plate                                              
+10/06 [12:33:04] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/06 [12:33:11] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 10                                            
+                 INFO     | >> # successes: 10 (100.0%)    eval_libero.py:256
+
+100%|██████████| 2/2 [00:16<00:00,  8.30s/it][A100%|██████████| 2/2 [00:16<00:00,  8.29s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          1.0                                                
+ 50%|█████     | 5/10 [01:25<01:21, 16.36s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/2 [00:00<?, ?it/s][A10/06 [12:33:12] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the ramekin and place it on the                    
+                          plate                                              
+10/06 [12:33:14] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/06 [12:33:19] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 11                                            
+                 INFO     | >> # successes: 11 (100.0%)    eval_libero.py:256
+
+ 50%|█████     | 1/2 [00:06<00:06,  6.17s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the ramekin and place it on the                    
+                          plate                                              
+10/06 [12:33:20] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/06 [12:33:25] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 12                                            
+                 INFO     | >> # successes: 12 (100.0%)    eval_libero.py:256
+
+100%|██████████| 2/2 [00:12<00:00,  6.22s/it][A100%|██████████| 2/2 [00:12<00:00,  6.21s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          1.0                                                
+ 60%|██████    | 6/10 [01:39<01:01, 15.47s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/2 [00:00<?, ?it/s][A10/06 [12:33:26] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the cookie box and place                   
+                          it on the plate                                    
+10/06 [12:33:28] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/06 [12:33:33] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 13                                            
+                 INFO     | >> # successes: 13 (100.0%)    eval_libero.py:256
+
+ 50%|█████     | 1/2 [00:07<00:07,  7.08s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the cookie box and place                   
+                          it on the plate                                    
+10/06 [12:33:35] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/06 [12:33:40] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 14                                            
+                 INFO     | >> # successes: 14 (100.0%)    eval_libero.py:256
+
+100%|██████████| 2/2 [00:13<00:00,  6.70s/it][A100%|██████████| 2/2 [00:13<00:00,  6.76s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          1.0                                                
+ 70%|███████   | 7/10 [01:54<00:45, 15.26s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/2 [00:00<?, ?it/s][A10/06 [12:33:41] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the stove and place it on the                      
+                          plate                                              
+10/06 [12:33:42] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/06 [12:33:48] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 15                                            
+                 INFO     | >> # successes: 15 (100.0%)    eval_libero.py:256
+
+ 50%|█████     | 1/2 [00:07<00:07,  7.38s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the stove and place it on the                      
+                          plate                                              
+10/06 [12:33:50] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/06 [12:33:56] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 16                                            
+                 INFO     | >> # successes: 16 (100.0%)    eval_libero.py:256
+
+100%|██████████| 2/2 [00:14<00:00,  7.42s/it][A100%|██████████| 2/2 [00:14<00:00,  7.41s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          1.0                                                
+ 80%|████████  | 8/10 [02:10<00:31, 15.54s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/2 [00:00<?, ?it/s][A10/06 [12:33:57] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the plate and place it                     
+                          on the plate                                       
+10/06 [12:33:59] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/06 [12:34:03] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 17                                            
+                 INFO     | >> # successes: 17 (100.0%)    eval_libero.py:256
+
+ 50%|█████     | 1/2 [00:06<00:06,  6.14s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the plate and place it                     
+                          on the plate                                       
+10/06 [12:34:05] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/06 [12:34:10] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 18                                            
+                 INFO     | >> # successes: 18 (100.0%)    eval_libero.py:256
+
+100%|██████████| 2/2 [00:12<00:00,  6.42s/it][A100%|██████████| 2/2 [00:12<00:00,  6.38s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          1.0                                                
+ 90%|█████████ | 9/10 [02:24<00:15, 15.08s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/2 [00:00<?, ?it/s][A10/06 [12:34:11] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the wooden cabinet and place it                    
+                          on the plate                                       
+10/06 [12:34:13] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/06 [12:34:18] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 19                                            
+                 INFO     | >> # successes: 19 (100.0%)    eval_libero.py:256
+
+ 50%|█████     | 1/2 [00:06<00:06,  6.94s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the wooden cabinet and place it                    
+                          on the plate                                       
+10/06 [12:34:20] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/06 [12:34:26] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 20                                            
+                 INFO     | >> # successes: 20 (100.0%)    eval_libero.py:256
+
+100%|██████████| 2/2 [00:14<00:00,  7.14s/it][A100%|██████████| 2/2 [00:14<00:00,  7.11s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          1.0                                                
+100%|██████████| 10/10 [02:40<00:00, 15.25s/it]100%|██████████| 10/10 [02:40<00:00, 16.01s/it]
+                 INFO     | >> Total success rate: 1.0     eval_libero.py:268
+                 INFO     | >> Total episodes: 20          eval_libero.py:271
+Exception ignored in: <function MjRenderContext.__del__ at 0x7b23e81912d0>
+Traceback (most recent call last):
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+    self.gl_ctx.free()
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/renderers/context/egl_context.py", line 149, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE, EGL.EGL_NO_SURFACE, EGL.EGL_NO_CONTEXT)
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x7b23c31fdfc0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7b23eaba4440>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7b23eaba4440>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x7b23eaba4940>,
+	),
+	result = 0
+)
+Exception ignored in: <function EGLGLContext.__del__ at 0x7b23e8191120>
+Traceback (most recent call last):
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+    self.free()
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/renderers/context/egl_context.py", line 149, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE, EGL.EGL_NO_SURFACE, EGL.EGL_NO_CONTEXT)
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x7b23c31fdfc0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7b23eaba4440>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7b23eaba4440>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x7b23eaba4940>,
+	),
+	result = 0
+)

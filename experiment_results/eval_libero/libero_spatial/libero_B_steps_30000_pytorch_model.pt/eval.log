@@ -1,0 +1,1188 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+10/07 [09:59:24] INFO     | >> Arguments: {                 eval_libero.py:77
+                              "host": "127.0.0.1",                           
+                              "port": 15083,                                 
+                              "task_suite_name":                             
+                          "libero_spatial",                                  
+                              "num_steps_wait": 10,                          
+                              "num_trials_per_task": 10,                     
+                              "task_stride": 1,                              
+                              "category_value": "Background                  
+                          Textures",                                         
+                              "video_out_path":                              
+                          "results/libero_spatial/libero_B_                  
+                          steps_30000_pytorch_model.pt",                     
+                              "seed": 7,                                     
+                              "pretrained_path":                             
+                          "/workspace/runs/libero_B/checkpo                  
+                          ints/steps_30000_pytorch_model.pt                  
+                          ",                                                 
+                              "post_process_action": true,                   
+                              "with_state": "true",                          
+                              "job_name": "test"                             
+                          }                                                  
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                 INFO     | >> Task suite: libero_spatial   eval_libero.py:89
+                 INFO     | >> Waiting for      websocket_policy_client.py:34
+                          server at                                          
+                          ws://127.0.0.1:15083.                              
+                          ..                                                 
+*** policy_setup: franka, unnorm_key: None ***
+                 INFO     | >> [*] Loading from local checkpoint tools.py:169
+                          path                                               
+                          `/workspace/runs/libero_B/checkpoints/             
+                          steps_30000_pytorch_model.pt`                      
+                 INFO     | >> [*] Loading from local checkpoint tools.py:169
+                          path                                               
+                          `/workspace/runs/libero_B/checkpoints/             
+                          steps_30000_pytorch_model.pt`                      
+  0%|          | 0/10 [00:00<?, ?it/s][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+/workspace/LIBERO/libero/libero/benchmark/__init__.py:164: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_states = torch.load(init_states_path)
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/10 [00:00<?, ?it/s][A10/07 [09:59:28] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          between the plate and the                          
+                          ramekin and place it on the                        
+                          plate                                              
+10/07 [09:59:30] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/07 [09:59:34] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 1                                             
+                 INFO     | >> # successes: 1 (100.0%)     eval_libero.py:256
+
+ 10%|█         | 1/10 [00:05<00:51,  5.67s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          between the plate and the                          
+                          ramekin and place it on the                        
+                          plate                                              
+10/07 [09:59:35] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/07 [09:59:40] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 2                                             
+                 INFO     | >> # successes: 2 (100.0%)     eval_libero.py:256
+
+ 20%|██        | 2/10 [00:11<00:45,  5.68s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          between the plate and the                          
+                          ramekin and place it on the                        
+                          plate                                              
+10/07 [09:59:41] INFO     | >> Starting episode 3...       eval_libero.py:146
+10/07 [09:59:46] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 3                                             
+                 INFO     | >> # successes: 3 (100.0%)     eval_libero.py:256
+
+ 30%|███       | 3/10 [00:17<00:40,  5.77s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          between the plate and the                          
+                          ramekin and place it on the                        
+                          plate                                              
+10/07 [09:59:47] INFO     | >> Starting episode 4...       eval_libero.py:146
+10/07 [09:59:51] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 4                                             
+                 INFO     | >> # successes: 4 (100.0%)     eval_libero.py:256
+
+ 40%|████      | 4/10 [00:23<00:34,  5.80s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          between the plate and the                          
+                          ramekin and place it on the                        
+                          plate                                              
+10/07 [09:59:53] INFO     | >> Starting episode 5...       eval_libero.py:146
+10/07 [09:59:57] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 5                                             
+                 INFO     | >> # successes: 5 (100.0%)     eval_libero.py:256
+
+ 50%|█████     | 5/10 [00:28<00:28,  5.67s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          between the plate and the                          
+                          ramekin and place it on the                        
+                          plate                                              
+10/07 [09:59:58] INFO     | >> Starting episode 6...       eval_libero.py:146
+10/07 [10:00:02] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 6                                             
+                 INFO     | >> # successes: 6 (100.0%)     eval_libero.py:256
+
+ 60%|██████    | 6/10 [00:33<00:22,  5.59s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          between the plate and the                          
+                          ramekin and place it on the                        
+                          plate                                              
+10/07 [10:00:04] INFO     | >> Starting episode 7...       eval_libero.py:146
+10/07 [10:00:08] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 7                                             
+                 INFO     | >> # successes: 7 (100.0%)     eval_libero.py:256
+
+ 70%|███████   | 7/10 [00:39<00:17,  5.69s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          between the plate and the                          
+                          ramekin and place it on the                        
+                          plate                                              
+10/07 [10:00:10] INFO     | >> Starting episode 8...       eval_libero.py:146
+10/07 [10:00:14] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 8                                             
+                 INFO     | >> # successes: 8 (100.0%)     eval_libero.py:256
+
+ 80%|████████  | 8/10 [00:45<00:11,  5.69s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          between the plate and the                          
+                          ramekin and place it on the                        
+                          plate                                              
+10/07 [10:00:15] INFO     | >> Starting episode 9...       eval_libero.py:146
+10/07 [10:00:20] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 9                                             
+                 INFO     | >> # successes: 9 (100.0%)     eval_libero.py:256
+
+ 90%|█████████ | 9/10 [00:51<00:05,  5.75s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          between the plate and the                          
+                          ramekin and place it on the                        
+                          plate                                              
+10/07 [10:00:21] INFO     | >> Starting episode 10...      eval_libero.py:146
+10/07 [10:00:25] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 10                                            
+                 INFO     | >> # successes: 10 (100.0%)    eval_libero.py:256
+
+100%|██████████| 10/10 [00:56<00:00,  5.60s/it][A100%|██████████| 10/10 [00:56<00:00,  5.67s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          1.0                                                
+ 10%|█         | 1/10 [01:00<09:06, 60.68s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+/workspace/LIBERO/libero/libero/benchmark/__init__.py:164: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_states = torch.load(init_states_path)
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/10 [00:00<?, ?it/s][A10/07 [10:00:26] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the ramekin and place it                   
+                          on the plate                                       
+10/07 [10:00:28] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/07 [10:00:34] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 11                                            
+                 INFO     | >> # successes: 11 (100.0%)    eval_libero.py:256
+
+ 10%|█         | 1/10 [00:07<01:09,  7.71s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the ramekin and place it                   
+                          on the plate                                       
+10/07 [10:00:35] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/07 [10:00:41] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 12                                            
+                 INFO     | >> # successes: 12 (100.0%)    eval_libero.py:256
+
+ 20%|██        | 2/10 [00:15<01:00,  7.56s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the ramekin and place it                   
+                          on the plate                                       
+10/07 [10:00:43] INFO     | >> Starting episode 3...       eval_libero.py:146
+10/07 [10:00:55] INFO     | >> Success: False              eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 13                                            
+                 INFO     | >> # successes: 12 (92.3%)     eval_libero.py:256
+
+ 30%|███       | 3/10 [00:28<01:12, 10.38s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the ramekin and place it                   
+                          on the plate                                       
+10/07 [10:00:57] INFO     | >> Starting episode 4...       eval_libero.py:146
+10/07 [10:01:03] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 14                                            
+                 INFO     | >> # successes: 13 (92.9%)     eval_libero.py:256
+
+ 40%|████      | 4/10 [00:36<00:55,  9.22s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the ramekin and place it                   
+                          on the plate                                       
+10/07 [10:01:04] INFO     | >> Starting episode 5...       eval_libero.py:146
+10/07 [10:01:11] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 15                                            
+                 INFO     | >> # successes: 14 (93.3%)     eval_libero.py:256
+
+ 50%|█████     | 5/10 [00:44<00:44,  8.83s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the ramekin and place it                   
+                          on the plate                                       
+10/07 [10:01:12] INFO     | >> Starting episode 6...       eval_libero.py:146
+10/07 [10:01:19] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 16                                            
+                 INFO     | >> # successes: 15 (93.8%)     eval_libero.py:256
+
+ 60%|██████    | 6/10 [00:52<00:33,  8.48s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the ramekin and place it                   
+                          on the plate                                       
+10/07 [10:01:20] INFO     | >> Starting episode 7...       eval_libero.py:146
+10/07 [10:01:29] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 17                                            
+                 INFO     | >> # successes: 16 (94.1%)     eval_libero.py:256
+
+ 70%|███████   | 7/10 [01:02<00:26,  8.98s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the ramekin and place it                   
+                          on the plate                                       
+10/07 [10:01:30] INFO     | >> Starting episode 8...       eval_libero.py:146
+10/07 [10:01:36] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 18                                            
+                 INFO     | >> # successes: 17 (94.4%)     eval_libero.py:256
+
+ 80%|████████  | 8/10 [01:09<00:17,  8.53s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the ramekin and place it                   
+                          on the plate                                       
+10/07 [10:01:38] INFO     | >> Starting episode 9...       eval_libero.py:146
+10/07 [10:01:43] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 19                                            
+                 INFO     | >> # successes: 18 (94.7%)     eval_libero.py:256
+
+ 90%|█████████ | 9/10 [01:17<00:08,  8.13s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the ramekin and place it                   
+                          on the plate                                       
+10/07 [10:01:45] INFO     | >> Starting episode 10...      eval_libero.py:146
+10/07 [10:01:51] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 20                                            
+                 INFO     | >> # successes: 19 (95.0%)     eval_libero.py:256
+
+100%|██████████| 10/10 [01:24<00:00,  8.00s/it][A100%|██████████| 10/10 [01:24<00:00,  8.48s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          0.9                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          0.95                                               
+ 20%|██        | 2/10 [02:26<10:05, 75.65s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/10 [00:00<?, ?it/s][A10/07 [10:01:52] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          from table center and place it                     
+                          on the plate                                       
+10/07 [10:01:54] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/07 [10:01:59] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 21                                            
+                 INFO     | >> # successes: 20 (95.2%)     eval_libero.py:256
+
+ 10%|█         | 1/10 [00:06<00:59,  6.62s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          from table center and place it                     
+                          on the plate                                       
+10/07 [10:02:01] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/07 [10:02:06] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 22                                            
+                 INFO     | >> # successes: 21 (95.5%)     eval_libero.py:256
+
+ 20%|██        | 2/10 [00:13<00:54,  6.82s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          from table center and place it                     
+                          on the plate                                       
+10/07 [10:02:08] INFO     | >> Starting episode 3...       eval_libero.py:146
+10/07 [10:02:12] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 23                                            
+                 INFO     | >> # successes: 22 (95.7%)     eval_libero.py:256
+
+ 30%|███       | 3/10 [00:19<00:46,  6.61s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          from table center and place it                     
+                          on the plate                                       
+10/07 [10:02:14] INFO     | >> Starting episode 4...       eval_libero.py:146
+10/07 [10:02:19] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 24                                            
+                 INFO     | >> # successes: 23 (95.8%)     eval_libero.py:256
+
+ 40%|████      | 4/10 [00:26<00:40,  6.71s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          from table center and place it                     
+                          on the plate                                       
+10/07 [10:02:21] INFO     | >> Starting episode 5...       eval_libero.py:146
+10/07 [10:02:27] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 25                                            
+                 INFO     | >> # successes: 24 (96.0%)     eval_libero.py:256
+
+ 50%|█████     | 5/10 [00:34<00:34,  6.92s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          from table center and place it                     
+                          on the plate                                       
+10/07 [10:02:28] INFO     | >> Starting episode 6...       eval_libero.py:146
+10/07 [10:02:34] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 26                                            
+                 INFO     | >> # successes: 25 (96.2%)     eval_libero.py:256
+
+ 60%|██████    | 6/10 [00:41<00:28,  7.23s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          from table center and place it                     
+                          on the plate                                       
+10/07 [10:02:36] INFO     | >> Starting episode 7...       eval_libero.py:146
+10/07 [10:02:41] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 27                                            
+                 INFO     | >> # successes: 26 (96.3%)     eval_libero.py:256
+
+ 70%|███████   | 7/10 [00:48<00:21,  7.14s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          from table center and place it                     
+                          on the plate                                       
+10/07 [10:02:43] INFO     | >> Starting episode 8...       eval_libero.py:146
+10/07 [10:02:49] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 28                                            
+                 INFO     | >> # successes: 27 (96.4%)     eval_libero.py:256
+
+ 80%|████████  | 8/10 [00:56<00:14,  7.21s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          from table center and place it                     
+                          on the plate                                       
+10/07 [10:02:50] INFO     | >> Starting episode 9...       eval_libero.py:146
+10/07 [10:02:56] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 29                                            
+                 INFO     | >> # successes: 28 (96.6%)     eval_libero.py:256
+
+ 90%|█████████ | 9/10 [01:03<00:07,  7.21s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          from table center and place it                     
+                          on the plate                                       
+10/07 [10:02:57] INFO     | >> Starting episode 10...      eval_libero.py:146
+10/07 [10:03:03] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 30                                            
+                 INFO     | >> # successes: 29 (96.7%)     eval_libero.py:256
+
+100%|██████████| 10/10 [01:10<00:00,  7.15s/it][A100%|██████████| 10/10 [01:10<00:00,  7.05s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          0.9666666666666667                                 
+ 30%|███       | 3/10 [03:38<08:37, 73.90s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/10 [00:00<?, ?it/s][A10/07 [10:03:04] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the cookie box and place it on                     
+                          the plate                                          
+10/07 [10:03:06] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/07 [10:03:10] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 31                                            
+                 INFO     | >> # successes: 30 (96.8%)     eval_libero.py:256
+
+ 10%|█         | 1/10 [00:06<00:54,  6.01s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the cookie box and place it on                     
+                          the plate                                          
+10/07 [10:03:12] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/07 [10:03:16] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 32                                            
+                 INFO     | >> # successes: 31 (96.9%)     eval_libero.py:256
+
+ 20%|██        | 2/10 [00:11<00:47,  6.00s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the cookie box and place it on                     
+                          the plate                                          
+10/07 [10:03:18] INFO     | >> Starting episode 3...       eval_libero.py:146
+10/07 [10:03:23] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 33                                            
+                 INFO     | >> # successes: 32 (97.0%)     eval_libero.py:256
+
+ 30%|███       | 3/10 [00:18<00:43,  6.15s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the cookie box and place it on                     
+                          the plate                                          
+10/07 [10:03:24] INFO     | >> Starting episode 4...       eval_libero.py:146
+10/07 [10:03:29] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 34                                            
+                 INFO     | >> # successes: 33 (97.1%)     eval_libero.py:256
+
+ 40%|████      | 4/10 [00:24<00:37,  6.22s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the cookie box and place it on                     
+                          the plate                                          
+10/07 [10:03:30] INFO     | >> Starting episode 5...       eval_libero.py:146
+10/07 [10:03:35] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 35                                            
+                 INFO     | >> # successes: 34 (97.1%)     eval_libero.py:256
+
+ 50%|█████     | 5/10 [00:30<00:30,  6.11s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the cookie box and place it on                     
+                          the plate                                          
+10/07 [10:03:36] INFO     | >> Starting episode 6...       eval_libero.py:146
+10/07 [10:03:41] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 36                                            
+                 INFO     | >> # successes: 35 (97.2%)     eval_libero.py:256
+
+ 60%|██████    | 6/10 [00:37<00:24,  6.22s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the cookie box and place it on                     
+                          the plate                                          
+10/07 [10:03:43] INFO     | >> Starting episode 7...       eval_libero.py:146
+10/07 [10:03:48] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 37                                            
+                 INFO     | >> # successes: 36 (97.3%)     eval_libero.py:256
+
+ 70%|███████   | 7/10 [00:43<00:18,  6.26s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the cookie box and place it on                     
+                          the plate                                          
+10/07 [10:03:49] INFO     | >> Starting episode 8...       eval_libero.py:146
+10/07 [10:03:53] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 38                                            
+                 INFO     | >> # successes: 37 (97.4%)     eval_libero.py:256
+
+ 80%|████████  | 8/10 [00:49<00:12,  6.09s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the cookie box and place it on                     
+                          the plate                                          
+10/07 [10:03:55] INFO     | >> Starting episode 9...       eval_libero.py:146
+10/07 [10:04:00] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 39                                            
+                 INFO     | >> # successes: 38 (97.4%)     eval_libero.py:256
+
+ 90%|█████████ | 9/10 [00:55<00:06,  6.15s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the cookie box and place it on                     
+                          the plate                                          
+10/07 [10:04:01] INFO     | >> Starting episode 10...      eval_libero.py:146
+10/07 [10:04:06] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 40                                            
+                 INFO     | >> # successes: 39 (97.5%)     eval_libero.py:256
+
+100%|██████████| 10/10 [01:01<00:00,  6.14s/it][A100%|██████████| 10/10 [01:01<00:00,  6.15s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          0.975                                              
+ 40%|████      | 4/10 [04:41<06:57, 69.52s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/10 [00:00<?, ?it/s][A10/07 [10:04:07] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl in                    
+                          the top drawer of the wooden                       
+                          cabinet and place it on the                        
+                          plate                                              
+10/07 [10:04:09] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/07 [10:04:22] INFO     | >> Success: False              eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 41                                            
+                 INFO     | >> # successes: 39 (95.1%)     eval_libero.py:256
+
+ 10%|█         | 1/10 [00:14<02:09, 14.37s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl in                    
+                          the top drawer of the wooden                       
+                          cabinet and place it on the                        
+                          plate                                              
+10/07 [10:04:23] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/07 [10:04:37] INFO     | >> Success: False              eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 42                                            
+                 INFO     | >> # successes: 39 (92.9%)     eval_libero.py:256
+
+ 20%|██        | 2/10 [00:29<01:58, 14.77s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl in                    
+                          the top drawer of the wooden                       
+                          cabinet and place it on the                        
+                          plate                                              
+10/07 [10:04:38] INFO     | >> Starting episode 3...       eval_libero.py:146
+10/07 [10:04:51] INFO     | >> Success: False              eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 43                                            
+                 INFO     | >> # successes: 39 (90.7%)     eval_libero.py:256
+
+ 30%|███       | 3/10 [00:43<01:42, 14.65s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl in                    
+                          the top drawer of the wooden                       
+                          cabinet and place it on the                        
+                          plate                                              
+10/07 [10:04:53] INFO     | >> Starting episode 4...       eval_libero.py:146
+10/07 [10:04:59] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 44                                            
+                 INFO     | >> # successes: 40 (90.9%)     eval_libero.py:256
+
+ 40%|████      | 4/10 [00:51<01:11, 11.91s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl in                    
+                          the top drawer of the wooden                       
+                          cabinet and place it on the                        
+                          plate                                              
+10/07 [10:05:00] INFO     | >> Starting episode 5...       eval_libero.py:146
+10/07 [10:05:10] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 45                                            
+                 INFO     | >> # successes: 41 (91.1%)     eval_libero.py:256
+
+ 50%|█████     | 5/10 [01:02<00:57, 11.53s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl in                    
+                          the top drawer of the wooden                       
+                          cabinet and place it on the                        
+                          plate                                              
+10/07 [10:05:11] INFO     | >> Starting episode 6...       eval_libero.py:146
+10/07 [10:05:24] INFO     | >> Success: False              eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 46                                            
+                 INFO     | >> # successes: 41 (89.1%)     eval_libero.py:256
+
+ 60%|██████    | 6/10 [01:16<00:49, 12.47s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl in                    
+                          the top drawer of the wooden                       
+                          cabinet and place it on the                        
+                          plate                                              
+10/07 [10:05:25] INFO     | >> Starting episode 7...       eval_libero.py:146
+10/07 [10:05:32] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 47                                            
+                 INFO     | >> # successes: 42 (89.4%)     eval_libero.py:256
+
+ 70%|███████   | 7/10 [01:25<00:33, 11.12s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl in                    
+                          the top drawer of the wooden                       
+                          cabinet and place it on the                        
+                          plate                                              
+10/07 [10:05:34] INFO     | >> Starting episode 8...       eval_libero.py:146
+10/07 [10:05:40] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 48                                            
+                 INFO     | >> # successes: 43 (89.6%)     eval_libero.py:256
+
+ 80%|████████  | 8/10 [01:32<00:20, 10.05s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl in                    
+                          the top drawer of the wooden                       
+                          cabinet and place it on the                        
+                          plate                                              
+10/07 [10:05:42] INFO     | >> Starting episode 9...       eval_libero.py:146
+10/07 [10:05:55] INFO     | >> Success: False              eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 49                                            
+                 INFO     | >> # successes: 43 (87.8%)     eval_libero.py:256
+
+ 90%|█████████ | 9/10 [01:47<00:11, 11.44s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl in                    
+                          the top drawer of the wooden                       
+                          cabinet and place it on the                        
+                          plate                                              
+10/07 [10:05:56] INFO     | >> Starting episode 10...      eval_libero.py:146
+10/07 [10:06:09] INFO     | >> Success: False              eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 50                                            
+                 INFO     | >> # successes: 43 (86.0%)     eval_libero.py:256
+
+100%|██████████| 10/10 [02:01<00:00, 12.40s/it][A100%|██████████| 10/10 [02:01<00:00, 12.19s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          0.4                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          0.86                                               
+ 50%|█████     | 5/10 [06:44<07:24, 88.92s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/10 [00:00<?, ?it/s][A10/07 [10:06:10] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the ramekin and place it on the                    
+                          plate                                              
+10/07 [10:06:12] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/07 [10:06:24] INFO     | >> Success: False              eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 51                                            
+                 INFO     | >> # successes: 43 (84.3%)     eval_libero.py:256
+
+ 10%|█         | 1/10 [00:13<02:04, 13.83s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the ramekin and place it on the                    
+                          plate                                              
+10/07 [10:06:26] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/07 [10:06:38] INFO     | >> Success: False              eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 52                                            
+                 INFO     | >> # successes: 43 (82.7%)     eval_libero.py:256
+
+ 20%|██        | 2/10 [00:27<01:52, 14.03s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the ramekin and place it on the                    
+                          plate                                              
+10/07 [10:06:40] INFO     | >> Starting episode 3...       eval_libero.py:146
+10/07 [10:06:52] INFO     | >> Success: False              eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 53                                            
+                 INFO     | >> # successes: 43 (81.1%)     eval_libero.py:256
+
+ 30%|███       | 3/10 [00:42<01:38, 14.02s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the ramekin and place it on the                    
+                          plate                                              
+10/07 [10:06:54] INFO     | >> Starting episode 4...       eval_libero.py:146
+10/07 [10:07:06] INFO     | >> Success: False              eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 54                                            
+                 INFO     | >> # successes: 43 (79.6%)     eval_libero.py:256
+
+ 40%|████      | 4/10 [00:56<01:24, 14.02s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the ramekin and place it on the                    
+                          plate                                              
+10/07 [10:07:08] INFO     | >> Starting episode 5...       eval_libero.py:146
+10/07 [10:07:20] INFO     | >> Success: False              eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 55                                            
+                 INFO     | >> # successes: 43 (78.2%)     eval_libero.py:256
+
+ 50%|█████     | 5/10 [01:09<01:09, 13.85s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the ramekin and place it on the                    
+                          plate                                              
+10/07 [10:07:21] INFO     | >> Starting episode 6...       eval_libero.py:146
+10/07 [10:07:27] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 56                                            
+                 INFO     | >> # successes: 44 (78.6%)     eval_libero.py:256
+
+ 60%|██████    | 6/10 [01:16<00:45, 11.38s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the ramekin and place it on the                    
+                          plate                                              
+10/07 [10:07:28] INFO     | >> Starting episode 7...       eval_libero.py:146
+10/07 [10:07:41] INFO     | >> Success: False              eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 57                                            
+                 INFO     | >> # successes: 44 (77.2%)     eval_libero.py:256
+
+ 70%|███████   | 7/10 [01:30<00:36, 12.22s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the ramekin and place it on the                    
+                          plate                                              
+10/07 [10:07:42] INFO     | >> Starting episode 8...       eval_libero.py:146
+10/07 [10:07:47] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 58                                            
+                 INFO     | >> # successes: 45 (77.6%)     eval_libero.py:256
+
+ 80%|████████  | 8/10 [01:36<00:20, 10.40s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the ramekin and place it on the                    
+                          plate                                              
+10/07 [10:07:49] INFO     | >> Starting episode 9...       eval_libero.py:146
+10/07 [10:07:53] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 59                                            
+                 INFO     | >> # successes: 46 (78.0%)     eval_libero.py:256
+
+ 90%|█████████ | 9/10 [01:42<00:09,  9.15s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the ramekin and place it on the                    
+                          plate                                              
+10/07 [10:07:55] INFO     | >> Starting episode 10...      eval_libero.py:146
+10/07 [10:08:08] INFO     | >> Success: False              eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 60                                            
+                 INFO     | >> # successes: 46 (76.7%)     eval_libero.py:256
+
+100%|██████████| 10/10 [01:57<00:00, 10.77s/it][A100%|██████████| 10/10 [01:57<00:00, 11.74s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          0.3                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          0.7666666666666667                                 
+ 60%|██████    | 6/10 [08:43<06:36, 99.06s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/10 [00:00<?, ?it/s][A10/07 [10:08:09] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the cookie box and place                   
+                          it on the plate                                    
+10/07 [10:08:11] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/07 [10:08:16] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 61                                            
+                 INFO     | >> # successes: 47 (77.0%)     eval_libero.py:256
+
+ 10%|█         | 1/10 [00:06<01:02,  6.99s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the cookie box and place                   
+                          it on the plate                                    
+10/07 [10:08:18] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/07 [10:08:22] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 62                                            
+                 INFO     | >> # successes: 48 (77.4%)     eval_libero.py:256
+
+ 20%|██        | 2/10 [00:13<00:52,  6.58s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the cookie box and place                   
+                          it on the plate                                    
+10/07 [10:08:24] INFO     | >> Starting episode 3...       eval_libero.py:146
+10/07 [10:08:29] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 63                                            
+                 INFO     | >> # successes: 49 (77.8%)     eval_libero.py:256
+
+ 30%|███       | 3/10 [00:20<00:46,  6.65s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the cookie box and place                   
+                          it on the plate                                    
+10/07 [10:08:31] INFO     | >> Starting episode 4...       eval_libero.py:146
+10/07 [10:08:36] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 64                                            
+                 INFO     | >> # successes: 50 (78.1%)     eval_libero.py:256
+
+ 40%|████      | 4/10 [00:26<00:40,  6.70s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the cookie box and place                   
+                          it on the plate                                    
+10/07 [10:08:37] INFO     | >> Starting episode 5...       eval_libero.py:146
+10/07 [10:08:42] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 65                                            
+                 INFO     | >> # successes: 51 (78.5%)     eval_libero.py:256
+
+ 50%|█████     | 5/10 [00:33<00:33,  6.61s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the cookie box and place                   
+                          it on the plate                                    
+10/07 [10:08:44] INFO     | >> Starting episode 6...       eval_libero.py:146
+10/07 [10:08:50] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 66                                            
+                 INFO     | >> # successes: 52 (78.8%)     eval_libero.py:256
+
+ 60%|██████    | 6/10 [00:40<00:27,  6.90s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the cookie box and place                   
+                          it on the plate                                    
+10/07 [10:08:51] INFO     | >> Starting episode 7...       eval_libero.py:146
+10/07 [10:08:56] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 67                                            
+                 INFO     | >> # successes: 53 (79.1%)     eval_libero.py:256
+
+ 70%|███████   | 7/10 [00:47<00:20,  6.82s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the cookie box and place                   
+                          it on the plate                                    
+10/07 [10:08:58] INFO     | >> Starting episode 8...       eval_libero.py:146
+10/07 [10:09:04] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 68                                            
+                 INFO     | >> # successes: 54 (79.4%)     eval_libero.py:256
+
+ 80%|████████  | 8/10 [00:54<00:13,  6.91s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the cookie box and place                   
+                          it on the plate                                    
+10/07 [10:09:05] INFO     | >> Starting episode 9...       eval_libero.py:146
+10/07 [10:09:11] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 69                                            
+                 INFO     | >> # successes: 55 (79.7%)     eval_libero.py:256
+
+ 90%|█████████ | 9/10 [01:02<00:07,  7.12s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the cookie box and place                   
+                          it on the plate                                    
+10/07 [10:09:13] INFO     | >> Starting episode 10...      eval_libero.py:146
+10/07 [10:09:18] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 70                                            
+                 INFO     | >> # successes: 56 (80.0%)     eval_libero.py:256
+
+100%|██████████| 10/10 [01:08<00:00,  6.94s/it][A100%|██████████| 10/10 [01:08<00:00,  6.86s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          0.8                                                
+ 70%|███████   | 7/10 [09:53<04:28, 89.52s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/10 [00:00<?, ?it/s][A10/07 [10:09:19] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the stove and place it on the                      
+                          plate                                              
+10/07 [10:09:20] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/07 [10:09:27] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 71                                            
+                 INFO     | >> # successes: 57 (80.3%)     eval_libero.py:256
+
+ 10%|█         | 1/10 [00:07<01:11,  7.90s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the stove and place it on the                      
+                          plate                                              
+10/07 [10:09:28] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/07 [10:09:36] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 72                                            
+                 INFO     | >> # successes: 58 (80.6%)     eval_libero.py:256
+
+ 20%|██        | 2/10 [00:16<01:08,  8.53s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the stove and place it on the                      
+                          plate                                              
+10/07 [10:09:37] INFO     | >> Starting episode 3...       eval_libero.py:146
+10/07 [10:09:44] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 73                                            
+                 INFO     | >> # successes: 59 (80.8%)     eval_libero.py:256
+
+ 30%|███       | 3/10 [00:25<00:59,  8.54s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the stove and place it on the                      
+                          plate                                              
+10/07 [10:09:46] INFO     | >> Starting episode 4...       eval_libero.py:146
+10/07 [10:09:53] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 74                                            
+                 INFO     | >> # successes: 60 (81.1%)     eval_libero.py:256
+
+ 40%|████      | 4/10 [00:34<00:52,  8.67s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the stove and place it on the                      
+                          plate                                              
+10/07 [10:09:55] INFO     | >> Starting episode 5...       eval_libero.py:146
+10/07 [10:10:02] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 75                                            
+                 INFO     | >> # successes: 61 (81.3%)     eval_libero.py:256
+
+ 50%|█████     | 5/10 [00:43<00:43,  8.74s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the stove and place it on the                      
+                          plate                                              
+10/07 [10:10:04] INFO     | >> Starting episode 6...       eval_libero.py:146
+10/07 [10:10:11] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 76                                            
+                 INFO     | >> # successes: 62 (81.6%)     eval_libero.py:256
+
+ 60%|██████    | 6/10 [00:51<00:34,  8.63s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the stove and place it on the                      
+                          plate                                              
+10/07 [10:10:12] INFO     | >> Starting episode 7...       eval_libero.py:146
+10/07 [10:10:20] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 77                                            
+                 INFO     | >> # successes: 63 (81.8%)     eval_libero.py:256
+
+ 70%|███████   | 7/10 [01:01<00:26,  8.93s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the stove and place it on the                      
+                          plate                                              
+10/07 [10:10:22] INFO     | >> Starting episode 8...       eval_libero.py:146
+10/07 [10:10:30] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 78                                            
+                 INFO     | >> # successes: 64 (82.1%)     eval_libero.py:256
+
+ 80%|████████  | 8/10 [01:10<00:18,  9.19s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the stove and place it on the                      
+                          plate                                              
+10/07 [10:10:31] INFO     | >> Starting episode 9...       eval_libero.py:146
+10/07 [10:10:38] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 79                                            
+                 INFO     | >> # successes: 65 (82.3%)     eval_libero.py:256
+
+ 90%|█████████ | 9/10 [01:19<00:08,  8.97s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the stove and place it on the                      
+                          plate                                              
+10/07 [10:10:40] INFO     | >> Starting episode 10...      eval_libero.py:146
+10/07 [10:10:47] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 80                                            
+                 INFO     | >> # successes: 66 (82.5%)     eval_libero.py:256
+
+100%|██████████| 10/10 [01:27<00:00,  8.84s/it][A100%|██████████| 10/10 [01:27<00:00,  8.79s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          0.825                                              
+ 80%|████████  | 8/10 [11:22<02:58, 89.44s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/10 [00:00<?, ?it/s][A10/07 [10:10:48] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the plate and place it                     
+                          on the plate                                       
+10/07 [10:10:50] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/07 [10:10:55] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 81                                            
+                 INFO     | >> # successes: 67 (82.7%)     eval_libero.py:256
+
+ 10%|█         | 1/10 [00:06<00:56,  6.27s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the plate and place it                     
+                          on the plate                                       
+10/07 [10:10:56] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/07 [10:11:02] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 82                                            
+                 INFO     | >> # successes: 68 (82.9%)     eval_libero.py:256
+
+ 20%|██        | 2/10 [00:13<00:54,  6.82s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the plate and place it                     
+                          on the plate                                       
+10/07 [10:11:03] INFO     | >> Starting episode 3...       eval_libero.py:146
+10/07 [10:11:08] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 83                                            
+                 INFO     | >> # successes: 69 (83.1%)     eval_libero.py:256
+
+ 30%|███       | 3/10 [00:20<00:47,  6.77s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the plate and place it                     
+                          on the plate                                       
+10/07 [10:11:10] INFO     | >> Starting episode 4...       eval_libero.py:146
+10/07 [10:11:15] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 84                                            
+                 INFO     | >> # successes: 70 (83.3%)     eval_libero.py:256
+
+ 40%|████      | 4/10 [00:26<00:40,  6.76s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the plate and place it                     
+                          on the plate                                       
+10/07 [10:11:17] INFO     | >> Starting episode 5...       eval_libero.py:146
+10/07 [10:11:22] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 85                                            
+                 INFO     | >> # successes: 71 (83.5%)     eval_libero.py:256
+
+ 50%|█████     | 5/10 [00:33<00:34,  6.83s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the plate and place it                     
+                          on the plate                                       
+10/07 [10:11:24] INFO     | >> Starting episode 6...       eval_libero.py:146
+10/07 [10:11:28] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 86                                            
+                 INFO     | >> # successes: 72 (83.7%)     eval_libero.py:256
+
+ 60%|██████    | 6/10 [00:39<00:26,  6.57s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the plate and place it                     
+                          on the plate                                       
+10/07 [10:11:30] INFO     | >> Starting episode 7...       eval_libero.py:146
+10/07 [10:11:35] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 87                                            
+                 INFO     | >> # successes: 73 (83.9%)     eval_libero.py:256
+
+ 70%|███████   | 7/10 [00:46<00:19,  6.48s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the plate and place it                     
+                          on the plate                                       
+10/07 [10:11:36] INFO     | >> Starting episode 8...       eval_libero.py:146
+10/07 [10:11:41] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 88                                            
+                 INFO     | >> # successes: 74 (84.1%)     eval_libero.py:256
+
+ 80%|████████  | 8/10 [00:52<00:13,  6.52s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the plate and place it                     
+                          on the plate                                       
+10/07 [10:11:43] INFO     | >> Starting episode 9...       eval_libero.py:146
+10/07 [10:11:48] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 89                                            
+                 INFO     | >> # successes: 75 (84.3%)     eval_libero.py:256
+
+ 90%|█████████ | 9/10 [00:59<00:06,  6.70s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl                       
+                          next to the plate and place it                     
+                          on the plate                                       
+10/07 [10:11:50] INFO     | >> Starting episode 10...      eval_libero.py:146
+10/07 [10:11:55] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 90                                            
+                 INFO     | >> # successes: 76 (84.4%)     eval_libero.py:256
+
+100%|██████████| 10/10 [01:06<00:00,  6.61s/it][A100%|██████████| 10/10 [01:06<00:00,  6.64s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          0.8444444444444444                                 
+ 90%|█████████ | 9/10 [12:30<01:22, 82.63s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/10 [00:00<?, ?it/s][A10/07 [10:11:56] INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the wooden cabinet and place it                    
+                          on the plate                                       
+10/07 [10:11:57] INFO     | >> Starting episode 1...       eval_libero.py:146
+10/07 [10:12:04] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 91                                            
+                 INFO     | >> # successes: 77 (84.6%)     eval_libero.py:256
+
+ 10%|█         | 1/10 [00:08<01:14,  8.32s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the wooden cabinet and place it                    
+                          on the plate                                       
+10/07 [10:12:06] INFO     | >> Starting episode 2...       eval_libero.py:146
+10/07 [10:12:12] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 92                                            
+                 INFO     | >> # successes: 78 (84.8%)     eval_libero.py:256
+
+ 20%|██        | 2/10 [00:15<01:03,  7.90s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the wooden cabinet and place it                    
+                          on the plate                                       
+10/07 [10:12:13] INFO     | >> Starting episode 3...       eval_libero.py:146
+10/07 [10:12:20] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 93                                            
+                 INFO     | >> # successes: 79 (84.9%)     eval_libero.py:256
+
+ 30%|███       | 3/10 [00:23<00:55,  7.97s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the wooden cabinet and place it                    
+                          on the plate                                       
+10/07 [10:12:21] INFO     | >> Starting episode 4...       eval_libero.py:146
+10/07 [10:12:28] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 94                                            
+                 INFO     | >> # successes: 80 (85.1%)     eval_libero.py:256
+
+ 40%|████      | 4/10 [00:32<00:48,  8.03s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the wooden cabinet and place it                    
+                          on the plate                                       
+10/07 [10:12:30] INFO     | >> Starting episode 5...       eval_libero.py:146
+10/07 [10:12:36] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 95                                            
+                 INFO     | >> # successes: 81 (85.3%)     eval_libero.py:256
+
+ 50%|█████     | 5/10 [00:39<00:39,  7.93s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the wooden cabinet and place it                    
+                          on the plate                                       
+10/07 [10:12:37] INFO     | >> Starting episode 6...       eval_libero.py:146
+10/07 [10:12:44] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 96                                            
+                 INFO     | >> # successes: 82 (85.4%)     eval_libero.py:256
+
+ 60%|██████    | 6/10 [00:47<00:31,  7.87s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the wooden cabinet and place it                    
+                          on the plate                                       
+10/07 [10:12:45] INFO     | >> Starting episode 7...       eval_libero.py:146
+10/07 [10:12:51] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 97                                            
+                 INFO     | >> # successes: 83 (85.6%)     eval_libero.py:256
+
+ 70%|███████   | 7/10 [00:55<00:23,  7.79s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the wooden cabinet and place it                    
+                          on the plate                                       
+10/07 [10:12:53] INFO     | >> Starting episode 8...       eval_libero.py:146
+10/07 [10:12:59] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 98                                            
+                 INFO     | >> # successes: 84 (85.7%)     eval_libero.py:256
+
+ 80%|████████  | 8/10 [01:03<00:15,  7.80s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the wooden cabinet and place it                    
+                          on the plate                                       
+10/07 [10:13:01] INFO     | >> Starting episode 9...       eval_libero.py:146
+10/07 [10:13:07] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 99                                            
+                 INFO     | >> # successes: 85 (85.9%)     eval_libero.py:256
+
+ 90%|█████████ | 9/10 [01:11<00:07,  7.96s/it][A                 INFO     | >>                             eval_libero.py:131
+                          Task: pick up the black bowl on                    
+                          the wooden cabinet and place it                    
+                          on the plate                                       
+10/07 [10:13:09] INFO     | >> Starting episode 10...      eval_libero.py:146
+10/07 [10:13:16] INFO     | >> Success: True               eval_libero.py:254
+                 INFO     | >> # episodes completed so     eval_libero.py:255
+                          far: 100                                           
+                 INFO     | >> # successes: 86 (86.0%)     eval_libero.py:256
+
+100%|██████████| 10/10 [01:19<00:00,  8.06s/it][A100%|██████████| 10/10 [01:19<00:00,  7.97s/it]
+                 INFO     | >> Current task success rate:  eval_libero.py:261
+                          1.0                                                
+                 INFO     | >> Current total success rate: eval_libero.py:264
+                          0.86                                               
+100%|██████████| 10/10 [13:51<00:00, 82.13s/it]100%|██████████| 10/10 [13:51<00:00, 83.13s/it]
+                 INFO     | >> Total success rate: 0.86    eval_libero.py:268
+                 INFO     | >> Total episodes: 100         eval_libero.py:271
+Exception ignored in: <function MjRenderContext.__del__ at 0x7a34f67492d0>
+Traceback (most recent call last):
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+    self.gl_ctx.free()
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/renderers/context/egl_context.py", line 149, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE, EGL.EGL_NO_SURFACE, EGL.EGL_NO_CONTEXT)
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x7a34c9a05fc0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7a34f91a0440>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7a34f91a0440>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x7a34f91a0940>,
+	),
+	result = 0
+)
+Exception ignored in: <function EGLGLContext.__del__ at 0x7a34f6749120>
+Traceback (most recent call last):
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+    self.free()
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/renderers/context/egl_context.py", line 149, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE, EGL.EGL_NO_SURFACE, EGL.EGL_NO_CONTEXT)
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x7a34c9a05fc0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7a34f91a0440>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7a34f91a0440>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x7a34f91a0940>,
+	),
+	result = 0
+)
