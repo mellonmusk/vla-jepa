@@ -47,6 +47,7 @@ class Args:
     task_suite_name: str = "libero_goal"  # Task suite. Options: libero_spatial, libero_object, libero_goal, libero_10, libero_90
     num_steps_wait: int = 10  # Number of steps to wait for objects to stabilize i n sim
     num_trials_per_task: int = 50  # Number of rollouts per task
+    task_stride: int = 1  # Evaluate every N-th task of the suite (use > 1 to subsample LIBERO-Plus)
     category_value: str = "Background Textures"
             #Background Textures
         #Camera Viewpoints
@@ -114,7 +115,7 @@ def eval_libero(args: Args) -> None:
 
     # Start evaluation
     total_episodes, total_successes = 0, 0
-    for task_id in tqdm.tqdm(range(num_tasks_in_suite)):
+    for task_id in tqdm.tqdm(range(0, num_tasks_in_suite, args.task_stride)):
         # Get task
         task = task_suite.get_task(task_id)
 
@@ -279,7 +280,7 @@ def _get_libero_env(task, resolution, seed):
         / task.bddl_file
     )
     env_args = {
-        "bddl_file_name": task_bddl_file,
+        "bddl_file_name": str(task_bddl_file),
         "camera_heights": resolution,
         "camera_widths": resolution,
     }

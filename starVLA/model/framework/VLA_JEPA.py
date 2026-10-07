@@ -67,6 +67,11 @@ class VLA_JEPA(baseframework):
             embodied_action_token=embodied_action_token
         )
 
+        # optional LoRA on the Qwen language model (post-training method B)
+        self.lora_r = int(self.config.framework.qwenvl.get("lora_r", 0) or 0)
+        if self.lora_r > 0:
+            self.inject_lora()
+
         # TODO speical tokens
 
         # align dims --> we should put them to config or no?
@@ -98,6 +103,41 @@ class VLA_JEPA(baseframework):
         )
 
         self.embodied_replace_prompt = "".join([embodied_action_token * self.config.framework.vj2_model.num_embodied_action_tokens_per_instruction])
+
+    def inject_lora(self):
+        """
+        Inject LoRA adapters into the attention projections of the Qwen language model.
+        The vision tower is skipped. All original Qwen weights are frozen, only `lora_` weights stay trainable.
+        """
+        from peft import LoraConfig, inject_adapter_in_model
+
+        qwen_cfg = self.config.framework.qwenvl
+        suffixes = [t.strip() for t in str(qwen_cfg.get("lora_target_modules", "q_proj,k_proj,v_proj,o_proj")).split(",") if t.strip()]
+        target_modules = [
+            name for name, module in self.qwen_vl_interface.model.named_modules()
+            if isinstance(module, nn.Linear) and "visual" not in name and name.split(".")[-1] in suffixes
+        ]
+        if not target_modules:
+            raise RuntimeError(f"LoRA: no Linear layers matched {suffixes} in the Qwen language model")
+
+        lora_config = LoraConfig(
+            r=self.lora_r,
+            lora_alpha=int(qwen_cfg.get("lora_alpha", 2 * self.lora_r)),
+            lora_dropout=float(qwen_cfg.get("lora_dropout", 0.05)),
+            target_modules=target_modules,
+            bias="none",
+        )
+        inject_adapter_in_model(lora_config, self.qwen_vl_interface.model)
+
+        num_lora_params = 0
+        for name, param in self.qwen_vl_interface.named_parameters():
+            param.requires_grad = "lora_" in name
+            if param.requires_grad:
+                num_lora_params += param.numel()
+        logger.info(
+            f"LoRA injected: r={self.lora_r}, {len(target_modules)} layers, "
+            f"{num_lora_params / 10**6:.3f}M trainable LoRA parameters"
+        )
 
     def expand_tokenizer(self, 
                          tokenizer: AutoTokenizer,
@@ -143,6 +183,9 @@ class VLA_JEPA(baseframework):
         
         state = [example["state"] for example in examples] if "state" in examples[0] else None  # [B, 1, state_dim]
 
+        # post-training can switch the JEPA world-model loss off (trainer.use_wm_loss: false)
+        use_wm_loss = self.config.trainer.get("use_wm_loss", True) if actions is not None else True
+
         batch_videos = np.stack(batch_videos)  #  [B, V, T, H, W, 3]
         batch_videos = batch_videos.transpose(0,1,2,5,3,4)  # [B, V, T, 3, H, W]
 
@@ -179,40 +222,41 @@ class VLA_JEPA(baseframework):
             action_tokens = last_hidden[action_indices[0], action_indices[1], :].view(B, -1, H)  # [B, action_len, H]
             embodied_action_tokens = last_hidden[embodied_action_indices[0], embodied_action_indices[1], :].view(B, -1, H)  # [B, action_len, H]
         
-            # Step 2: JEPA Encoder
-            B, V, T, C, H, W = batch_videos.shape
-            batch_videos = batch_videos.reshape(B*V, T, C, H, W)  # [B*V, T, C, H, W]
-            input_videos = []
-            for i in range(B*V):
-                input_videos.append(self.vj_processor(
-                    videos=batch_videos[i], return_tensors="pt"
-                )["pixel_values_videos"].to(self.vj_encoder.device))
-            input_videos = torch.cat(input_videos, dim=0)  # [B*V, T, C, H, W]
-            with torch.no_grad():
-                video_embeddings = self.vj_encoder.get_vision_features(pixel_values_videos=input_videos)
-                num_temporal_steps = T // self.vj_encoder.config.tubelet_size
-                tokens_per_clip, embed_dim = video_embeddings.shape[1:]
-                tokens_per_step = tokens_per_clip // num_temporal_steps
-                video_embeddings = video_embeddings.reshape(B, V, num_temporal_steps, tokens_per_step, embed_dim)
-                video_embeddings = video_embeddings.permute(0, 2, 3, 1, 4).contiguous().reshape(
-                    B, num_temporal_steps * tokens_per_step, V * embed_dim
-                )
-            #print(video_embeddings.shape) # [B, T//tubelet_size * dim_per_frame, V*embed_dim]
+            if use_wm_loss:
+                # Step 2: JEPA Encoder
+                B, V, T, C, H, W = batch_videos.shape
+                batch_videos = batch_videos.reshape(B*V, T, C, H, W)  # [B*V, T, C, H, W]
+                input_videos = []
+                for i in range(B*V):
+                    input_videos.append(self.vj_processor(
+                        videos=batch_videos[i], return_tensors="pt"
+                    )["pixel_values_videos"].to(self.vj_encoder.device))
+                input_videos = torch.cat(input_videos, dim=0)  # [B*V, T, C, H, W]
+                with torch.no_grad():
+                    video_embeddings = self.vj_encoder.get_vision_features(pixel_values_videos=input_videos)
+                    num_temporal_steps = T // self.vj_encoder.config.tubelet_size
+                    tokens_per_clip, embed_dim = video_embeddings.shape[1:]
+                    tokens_per_step = tokens_per_clip // num_temporal_steps
+                    video_embeddings = video_embeddings.reshape(B, V, num_temporal_steps, tokens_per_step, embed_dim)
+                    video_embeddings = video_embeddings.permute(0, 2, 3, 1, 4).contiguous().reshape(
+                        B, num_temporal_steps * tokens_per_step, V * embed_dim
+                    )
+                #print(video_embeddings.shape) # [B, T//tubelet_size * dim_per_frame, V*embed_dim]
         
-            # Step 3: VJ Predictor
-            T = T // self.vj_encoder.config.tubelet_size
-            input_states = video_embeddings[:, :video_embeddings.shape[1] // T * (T-1),:]  # [B, (T-1)*dim_per_frame, V*embed_dim]
-            gt_states = video_embeddings[:, video_embeddings.shape[1] // T:, :]
-            predicted_states = self.vj_predictor(
-                input_states,
-                action_tokens
-            )
+                # Step 3: VJ Predictor
+                T = T // self.vj_encoder.config.tubelet_size
+                input_states = video_embeddings[:, :video_embeddings.shape[1] // T * (T-1),:]  # [B, (T-1)*dim_per_frame, V*embed_dim]
+                gt_states = video_embeddings[:, video_embeddings.shape[1] // T:, :]
+                predicted_states = self.vj_predictor(
+                    input_states,
+                    action_tokens
+                )
 
-            teacher_forcing_wm_loss = F.l1_loss(
-                predicted_states,
-                gt_states,
-                reduction="mean"
-            )
+                teacher_forcing_wm_loss = F.l1_loss(
+                    predicted_states,
+                    gt_states,
+                    reduction="mean"
+                )
         
         if "action" not in examples[0]:
             return {"wm_loss": teacher_forcing_wm_loss}
@@ -240,6 +284,8 @@ class VLA_JEPA(baseframework):
 
             action_loss = self.action_model(embodied_action_repeated, actions_target_repeated, state_repeated)  # (B, chunk_len, action_dim)
 
+        if not use_wm_loss:
+            return {"action_loss": action_loss}
         return {"action_loss": action_loss, "wm_loss": teacher_forcing_wm_loss * 0.1}
 
     @torch.inference_mode()

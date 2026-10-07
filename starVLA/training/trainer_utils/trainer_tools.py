@@ -92,7 +92,7 @@ def build_param_lr_groups(model, cfg):
             for attr in module_name.split("."):
                 module = getattr(module, attr)
             # filter out frozen parameters
-            params = [p for p in module.parameters() if id(p) not in frozen_params]
+            params = [p for p in module.parameters() if id(p) not in frozen_params and p.requires_grad]
             if params:  # only add param group if there are trainable parameters
                 param_groups.append({"params": params, "lr": lr, "name": module_name})
                 used_params.update(id(p) for p in params)
@@ -100,7 +100,9 @@ def build_param_lr_groups(model, cfg):
             ReferenceError(f"⚠️ module path `{module_name}` not found in vla")
 
     # assign base learning rate to the remaining unused parameters (exclude frozen ones)
-    other_params = [p for p in model.parameters() if id(p) not in used_params and id(p) not in frozen_params]
+    other_params = [
+        p for p in model.parameters() if id(p) not in used_params and id(p) not in frozen_params and p.requires_grad
+    ]
     if other_params:
         param_groups.append({"params": other_params, "lr": base_lr, "name": "base"})
 
@@ -250,9 +252,31 @@ class TrainerUtils:
                     print(f"❌ cannot find module path: {path}")
         else:  # full load
             try:
-                model.load_state_dict(checkpoint, strict=True)
+                # LoRA wraps a Linear layer, which renames `x.weight` to `x.base_layer.weight`.
+                # Remap those keys so the pretrained weights still land in the wrapped layers.
+                model_keys = set(model.state_dict().keys())
+                remapped, num_remapped = {}, 0
+                for key, value in checkpoint.items():
+                    if key not in model_keys and "." in key:
+                        prefix, leaf = key.rsplit(".", 1)
+                        lora_key = f"{prefix}.base_layer.{leaf}"
+                        if lora_key in model_keys:
+                            key = lora_key
+                            num_remapped += 1
+                    remapped[key] = value
+                missing, unexpected = model.load_state_dict(remapped, strict=False)
+                # only freshly initialized LoRA weights may be absent from the checkpoint
+                missing_not_lora = [k for k in missing if "lora_" not in k]
+                if missing_not_lora or unexpected:
+                    raise RuntimeError(
+                        f"missing keys: {missing_not_lora[:10]} ({len(missing_not_lora)} total), "
+                        f"unexpected keys: {list(unexpected)[:10]} ({len(unexpected)} total)"
+                    )
                 if dist.get_rank() == 0:
-                    print("✅ loaded <full_model> model parameters")
+                    print(
+                        f"✅ loaded <full_model> model parameters "
+                        f"({num_remapped} keys remapped into LoRA base layers, {len(missing)} new LoRA keys)"
+                    )
                 loaded_modules = ["<full_model>"]
             except Exception as e:
                 raise RuntimeError(f"❌ loading full model failed: {e}")
