@@ -85,6 +85,105 @@
 - B의 버티는 정도는 변화와 suite의 조합에 따라 크게 달랐습니다. 배경 변화에서는 spatial이 78%로 높고, 조명 변화에서는 spatial이 19%로 낮습니다. 칸당 표본이 작아 이 양상은 추가 확인이 필요합니다.
 - suite 구분은 LIBERO-Plus의 `task_classification.json`과 벤치마크의 태스크 선택 규칙을 다시 계산해 붙인 것입니다. 세 범주의 전체 태스크 수가 평가 때 출력된 값과 일치하는 것을 확인했습니다.
 
+## 세부 분석
+
+로그에서 추가로 확인한 내용입니다. 3번과 5번은 seed 하나의 관찰이라 가설 수준입니다.
+
+**1. open-loop 오차의 작은 차이가 closed-loop 성공률에서는 크게 벌어졌습니다.**
+
+| | (A) | (B) | 차이 |
+|---|---|---|---|
+| 학습 action loss (마지막 7,500 step 평균) | 0.077 | 0.064 | B가 17% 낮음 |
+| open-loop 예측 오차 (`mse_score`, 같은 구간) | 0.0096 | 0.0080 | B가 17% 낮음 |
+| 표준 LIBERO 성공률 | 41.8% | 76.5% | B가 1.8배 |
+| libero_10 성공률 | 8% | 59% | B가 7배 |
+
+**2. 두 기법 모두 학습이 덜 된 상태입니다.** 30,000 step은 데이터를 0.59회 통과한 양이고(로그의 `epoch` 값), loss는 끝까지 내려가고 있었습니다. 이 실험은 적은 학습 예산에서의 비교입니다.
+
+구간별 평균 (action loss / open-loop 오차):
+
+| step 구간 | (A) | (B) |
+|---|---|---|
+| 0 ~ 500 | 0.216 / 0.0194 | 0.209 / 0.0211 |
+| 500 ~ 2,000 | 0.149 / 0.0158 | 0.127 / 0.0142 |
+| 2,000 ~ 7,500 | 0.111 / 0.0129 | 0.094 / 0.0107 |
+| 7,500 ~ 15,000 | 0.095 / 0.0107 | 0.081 / 0.0093 |
+| 15,000 ~ 22,500 | 0.084 / 0.0099 | 0.072 / 0.0085 |
+| 22,500 ~ 30,000 | 0.077 / 0.0096 | 0.064 / 0.0080 |
+
+**3. A의 약점은 지시문 구분보다 물체 구분 쪽으로 보입니다.** 장면이 같고 지시문만 다른 libero_goal에서 A는 61%로 가장 높았습니다. 여러 물체 중 이름이 불린 것을 골라야 하는 libero_object에서는 39%였고 물체에 따라 편차가 컸습니다. A가 엉뚱한 물체를 집는지 집기 자체를 실패하는지는 영상으로 확인해야 합니다.
+
+**4. 긴 태스크에서 A는 단순 누적 이상으로 떨어졌습니다.** libero_10의 "두 물체를 바구니에 넣기" 세 태스크는 libero_object와 같은 장면에서 집기를 두 번 합니다.
+
+| | libero_object 성공률 | 두 번이면 기대값 (제곱) | 실제 (세 태스크 합계) |
+|---|---|---|---|
+| A | 39% | 약 15% | 3% (1/30) |
+| B | 85% | 약 72% | 93% (28/30) |
+
+**5. VLM을 동결해도 지시문 표현 변화에 강해지지 않았습니다.** LIBERO-Plus의 Language Instructions에서 A는 8.4%, B는 31.8%였습니다(표준 평균 41.8%, 76.5%). 지시문 40개로만 학습한 action expert가 특정 문구에 맞춰진 것으로 보입니다.
+
+**6. B는 변화가 심할수록 떨어졌고, A는 전 단계에서 바닥이었습니다.** LIBERO-Plus 난이도별 성공률(세 범주 합계)입니다.
+
+| 난이도 | 에피소드 | (A) | (B) |
+|---|---|---|---|
+| 1 | 88 | 6.8% | 43.2% |
+| 2 | 97 | 3.1% | 37.1% |
+| 3 | 82 | 6.1% | 31.7% |
+| 4 | 98 | 6.1% | 32.7% |
+| 5 | 85 | 4.7% | 23.5% |
+| 표시 없음 | 21 | 9.5% | 38.1% |
+
+**7. B가 낮아진 태스크와 둘 다 풀지 못한 태스크가 있습니다.** 표준 LIBERO의 태스크별 성공 횟수(10회 중)입니다.
+
+| Suite | 태스크 | A | B |
+|---|---|---|---|
+| spatial | bowl between the plate and the ramekin | 9 | 10 |
+| spatial | bowl next to the ramekin | 7 | 9 |
+| spatial | bowl from table center | 8 | 10 |
+| spatial | bowl on the cookie box | 7 | 10 |
+| spatial | bowl in the top drawer of the wooden cabinet | 0 | 4 |
+| spatial | bowl on the ramekin | 5 | 3 |
+| spatial | bowl next to the cookie box | 5 | 10 |
+| spatial | bowl on the stove | 7 | 10 |
+| spatial | bowl next to the plate | 8 | 10 |
+| spatial | bowl on the wooden cabinet | 3 | 10 |
+| object | alphabet soup | 4 | 8 |
+| object | cream cheese | 3 | 10 |
+| object | salad dressing | 7 | 8 |
+| object | bbq sauce | 5 | 7 |
+| object | ketchup | 5 | 8 |
+| object | tomato sauce | 3 | 6 |
+| object | butter | 4 | 10 |
+| object | milk | 1 | 10 |
+| object | chocolate pudding | 1 | 9 |
+| object | orange juice | 6 | 9 |
+| goal | open the middle drawer of the cabinet | 7 | 3 |
+| goal | put the bowl on the stove | 9 | 10 |
+| goal | put the wine bottle on top of the cabinet | 7 | 9 |
+| goal | open the top drawer and put the bowl inside | 3 | 8 |
+| goal | put the bowl on top of the cabinet | 7 | 9 |
+| goal | push the plate to the front of the stove | 4 | 8 |
+| goal | put the cream cheese in the bowl | 6 | 9 |
+| goal | turn on the stove | 9 | 9 |
+| goal | put the bowl on the plate | 8 | 7 |
+| goal | put the wine bottle on the rack | 1 | 4 |
+| libero_10 | put both the alphabet soup and the tomato sauce in the basket | 0 | 9 |
+| libero_10 | put both the cream cheese box and the butter in the basket | 0 | 10 |
+| libero_10 | turn on the stove and put the moka pot on it | 1 | 9 |
+| libero_10 | put the black bowl in the bottom drawer of the cabinet and close it | 1 | 7 |
+| libero_10 | white mug on the left plate, yellow and white mug on the right plate | 0 | 7 |
+| libero_10 | pick up the book and place it in the back compartment of the caddy | 4 | 4 |
+| libero_10 | white mug on the plate, chocolate pudding to the right of the plate | 1 | 2 |
+| libero_10 | put both the alphabet soup and the cream cheese box in the basket | 1 | 9 |
+| libero_10 | put both moka pots on the stove | 0 | 0 |
+| libero_10 | put the yellow and white mug in the microwave and close it | 0 | 2 |
+
+**8. 성공할 때의 속도는 같았습니다.** 성공한 에피소드의 평균 소요 시간(초, 로그 시각 기준)은 spatial 5.8 / 5.7, object 6.0 / 6.3, goal 5.3 / 5.4, libero_10 10.1 / 12.1입니다(A / B).
+
+## 예정된 추가 평가
+
+중간 체크포인트(7,500 / 15,000 / 22,500 step)를 두 기법 모두 표준 LIBERO 4개 suite에서 평가해 학습 진행에 따른 성공률 곡선을 추가할 예정입니다. 각 체크포인트는 데이터의 약 15% / 30% / 44%를 본 시점이고, 30,000 step은 59%입니다. 시연 개수를 줄이는 데이터 ablation이 아니라 학습 예산에 따른 변화를 보는 평가입니다.
+
 ## 학습 비용
 
 RTX 4090 1장, 30,000 step, batch size 8입니다.
