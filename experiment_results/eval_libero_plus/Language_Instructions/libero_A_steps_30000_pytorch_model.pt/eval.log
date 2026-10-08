@@ -1,0 +1,2218 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /workspace/miniconda3/envs/libero_plus/lib/python3.10/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+10/07 [13:07:22] INFO     | >> Arguments: {                       eval_libero.py:77
+                              "host": "127.0.0.1",                                 
+                              "port": 15083,                                       
+                              "task_suite_name": "libero_mix",                     
+                              "num_steps_wait": 10,                                
+                              "num_trials_per_task": 1,                            
+                              "task_stride": 10,                                   
+                              "category_value": "Language                          
+                          Instructions",                                           
+                              "video_out_path":                                    
+                          "results/libero_mix/Language_Instructio                  
+                          ns/libero_A_steps_30000_pytorch_model.p                  
+                          t",                                                      
+                              "seed": 7,                                           
+                              "pretrained_path":                                   
+                          "/workspace/runs/libero_A/checkpoints/s                  
+                          teps_30000_pytorch_model.pt",                            
+                              "post_process_action": true,                         
+                              "with_state": "true",                                
+                              "job_name": "test"                                   
+                          }                                                        
+-------LIBERO-PLUS-CATEGORY: Language Instructions
+                 INFO     | >> Task suite: libero_mix             eval_libero.py:89
+                 INFO     | >> Waiting for server at  websocket_policy_client.py:34
+                          ws://127.0.0.1:15083...                                  
+*** policy_setup: franka, unnorm_key: None ***
+                 INFO     | >> [*] Loading from local checkpoint path  tools.py:169
+                          `/workspace/runs/libero_A/checkpoints/steps_             
+                          30000_pytorch_model.pt`                                  
+10/07 [13:07:23] INFO     | >> [*] Loading from local checkpoint path  tools.py:169
+                          `/workspace/runs/libero_A/checkpoints/steps_             
+                          30000_pytorch_model.pt`                                  
+  0%|          | 0/154 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:07:26] INFO     | >>                                   eval_libero.py:131
+                          Task: the black bowl between the plate                   
+                          and ramekin needs to be moved please                     
+                          place it on the plate when you have a                    
+                          moment                                                   
+10/07 [13:07:27] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:07:52] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 1    eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.91s/it][A100%|██████████| 1/1 [00:25<00:00, 25.91s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0   eval_libero.py:264
+  1%|          | 1/154 [00:29<1:15:02, 29.43s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:07:53] INFO     | >>                                   eval_libero.py:131
+                          Task: retrieve the darkcolored                           
+                          receptacle situated within the                           
+                          uppermost storage compartment of the                     
+                          timber storage unit and position it                      
+                          onto the dish                                            
+10/07 [13:07:55] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:08:20] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 2    eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:26<00:00, 26.80s/it][A100%|██████████| 1/1 [00:26<00:00, 26.80s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0   eval_libero.py:264
+  1%|▏         | 2/154 [00:57<1:12:29, 28.61s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:08:21] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the darkcolored rounded                       
+                          container situated beside the                            
+                          container holding baked sweet treats                     
+                          and set it down upon the flat circular                   
+                          dish                                                     
+10/07 [13:08:23] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:08:46] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 3    eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:24<00:00, 24.88s/it][A100%|██████████| 1/1 [00:24<00:00, 24.88s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0   eval_libero.py:264
+  2%|▏         | 3/154 [01:23<1:09:08, 27.47s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:08:47] INFO     | >>                                   eval_libero.py:131
+                          Task: grasp the darkcolored vessel                       
+                          adjacent to the container holding                        
+                          baked sweet treats and relocate it                       
+                          atop the dish designed for serving                       
+                          food                                                     
+10/07 [13:08:49] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:09:13] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 4    eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.97s/it][A100%|██████████| 1/1 [00:25<00:00, 25.97s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0   eval_libero.py:264
+  3%|▎         | 4/154 [01:50<1:08:27, 27.38s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:09:15] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the darkcolored dish                          
+                          located beside the flat dish used for                    
+                          serving food and set it upon the flat                    
+                          dish                                                     
+10/07 [13:09:16] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:09:41] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 5    eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:26<00:00, 26.33s/it][A100%|██████████| 1/1 [00:26<00:00, 26.33s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0   eval_libero.py:264
+  3%|▎         | 5/154 [02:18<1:08:11, 27.46s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:09:42] INFO     | >>                                   eval_libero.py:131
+                          Task: grasp hold of the darkhued                         
+                          vessel located on the appliance used                     
+                          for cooking and set it atop the dish                     
+                          used for serving food                                    
+10/07 [13:09:44] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:10:08] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 6    eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.41s/it][A100%|██████████| 1/1 [00:25<00:00, 25.41s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0   eval_libero.py:264
+  4%|▍         | 6/154 [02:45<1:07:03, 27.19s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:10:09] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the darkcolored concave                       
+                          vessel situated in the middle of the                     
+                          dining surface and set it on the flat                    
+                          circular dish                                            
+10/07 [13:10:10] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:10:34] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 7    eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.05s/it][A100%|██████████| 1/1 [00:25<00:00, 25.05s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0   eval_libero.py:264
+  5%|▍         | 7/154 [03:11<1:05:54, 26.90s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:10:35] INFO     | >>                                   eval_libero.py:131
+                          Task: ensure the black bowl from the                     
+                          wooden cabinet is on the plate                           
+10/07 [13:10:37] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:11:02] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 8    eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:26<00:00, 26.41s/it][A100%|██████████| 1/1 [00:26<00:00, 26.41s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0   eval_libero.py:264
+  5%|▌         | 8/154 [03:39<1:06:04, 27.15s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:11:03] INFO     | >>                                   eval_libero.py:131
+                          Task: ensure the black bowl from the                     
+                          top drawer of the wooden cabinet is on                   
+                          the plate                                                
+10/07 [13:11:04] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:11:13] INFO     | >> Success: True                     eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 9    eval_libero.py:255
+                 INFO     | >> # successes: 1 (11.1%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:09<00:00,  9.95s/it][A100%|██████████| 1/1 [00:09<00:00,  9.95s/it]
+                 INFO     | >> Current task success rate: 1.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1111111111111111                                       
+  6%|▌         | 9/154 [03:50<53:35, 22.18s/it]  
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:11:14] INFO     | >>                                   eval_libero.py:131
+                          Task: pick up the darkhued circular                      
+                          container resting on the small glazed                    
+                          baking dish and place it on the flat                     
+                          dish for serving food                                    
+10/07 [13:11:16] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:11:41] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 10   eval_libero.py:255
+                 INFO     | >> # successes: 1 (10.0%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:26<00:00, 26.64s/it][A100%|██████████| 1/1 [00:26<00:00, 26.64s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.1   eval_libero.py:264
+  6%|▋         | 10/154 [04:18<57:28, 23.94s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:11:42] INFO     | >>                                   eval_libero.py:131
+                          Task: retrieve the darkhued concave                      
+                          container from the middle of the flat                    
+                          surface for meals and set it atop the                    
+                          flat dish                                                
+10/07 [13:11:43] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:12:08] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 11   eval_libero.py:255
+                 INFO     | >> # successes: 1 (9.1%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:26<00:00, 26.01s/it][A100%|██████████| 1/1 [00:26<00:00, 26.01s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09090909090909091                                      
+  7%|▋         | 11/154 [04:45<59:29, 24.96s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:12:09] INFO     | >>                                   eval_libero.py:131
+                          Task: grab the darkhued rounded                          
+                          container situated adjacent to the                       
+                          rectangular container of baked sweets                    
+                          and set it down on the flat circular                     
+                          dish                                                     
+10/07 [13:12:11] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:12:34] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 12   eval_libero.py:255
+                 INFO     | >> # successes: 1 (8.3%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:24<00:00, 24.62s/it][A100%|██████████| 1/1 [00:24<00:00, 24.62s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.08333333333333333                                      
+  8%|▊         | 12/154 [05:11<59:44, 25.24s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:12:35] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the black dish from the                       
+                          wooden cupboard and set it on the                        
+                          plate                                                    
+10/07 [13:12:37] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:13:00] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 13   eval_libero.py:255
+                 INFO     | >> # successes: 1 (7.7%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.10s/it][A100%|██████████| 1/1 [00:25<00:00, 25.11s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.07692307692307693                                      
+  8%|▊         | 13/154 [05:37<1:00:08, 25.59s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:13:02] INFO     | >>                                   eval_libero.py:131
+                          Task: lets rearrange the table pick up                   
+                          the black bowl between the plate and                     
+                          ramekin and place it on the plate                        
+10/07 [13:13:03] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:13:28] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 14   eval_libero.py:255
+                 INFO     | >> # successes: 1 (7.1%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.97s/it][A100%|██████████| 1/1 [00:25<00:00, 25.97s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.07142857142857142                                      
+  9%|▉         | 14/154 [06:05<1:00:51, 26.08s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:13:29] INFO     | >>                                   eval_libero.py:131
+                          Task: for proper organization please                     
+                          pick up the black bowl located next to                   
+                          the cookie box and set it on the plate                   
+10/07 [13:13:30] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:13:54] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 15   eval_libero.py:255
+                 INFO     | >> # successes: 1 (6.7%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.01s/it][A100%|██████████| 1/1 [00:25<00:00, 25.01s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.06666666666666667                                      
+ 10%|▉         | 15/154 [06:31<1:00:34, 26.15s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:13:55] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the dark colored dish                         
+                          situated between the flat dish used                      
+                          for main courses and the small dish                      
+                          often used for baking desserts then                      
+                          set it atop the flat dish used for                       
+                          main courses                                             
+10/07 [13:13:56] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:14:21] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 16   eval_libero.py:255
+                 INFO     | >> # successes: 1 (6.2%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.74s/it][A100%|██████████| 1/1 [00:25<00:00, 25.74s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.0625                                                   
+ 10%|█         | 16/154 [06:58<1:00:43, 26.40s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:14:22] INFO     | >>                                   eval_libero.py:131
+                          Task: as the next step in our meal                       
+                          prep transfer the black bowl from the                    
+                          stove to the waiting plate                               
+10/07 [13:14:23] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:14:48] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 17   eval_libero.py:255
+                 INFO     | >> # successes: 1 (5.9%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:26<00:00, 26.11s/it][A100%|██████████| 1/1 [00:26<00:00, 26.11s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.058823529411764705                                     
+ 11%|█         | 17/154 [07:25<1:00:58, 26.70s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:14:49] INFO     | >>                                   eval_libero.py:131
+                          Task: for proper table arrangement the                   
+                          black bowl should be on the plate                        
+                          please make that adjustment now                          
+10/07 [13:14:51] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:15:06] INFO     | >> Success: True                     eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 18   eval_libero.py:255
+                 INFO     | >> # successes: 2 (11.1%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:16<00:00, 16.11s/it][A100%|██████████| 1/1 [00:16<00:00, 16.11s/it]
+                 INFO     | >> Current task success rate: 1.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1111111111111111                                       
+ 12%|█▏        | 18/154 [07:43<54:10, 23.90s/it]  
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:15:07] INFO     | >>                                   eval_libero.py:131
+                          Task: pick up the darkcolored circular                   
+                          container on the surface meant for                       
+                          storing kitchenware and place it on                      
+                          the flat dish designed for serving                       
+                          food                                                     
+10/07 [13:15:08] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:15:32] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 19   eval_libero.py:255
+                 INFO     | >> # successes: 2 (10.5%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.40s/it][A100%|██████████| 1/1 [00:25<00:00, 25.40s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10526315789473684                                      
+ 12%|█▏        | 19/154 [08:09<55:44, 24.77s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:15:34] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the dark bowl from the                        
+                          cooker and set it on the dish                            
+10/07 [13:15:35] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:15:59] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 20   eval_libero.py:255
+                 INFO     | >> # successes: 2 (10.0%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.45s/it][A100%|██████████| 1/1 [00:25<00:00, 25.45s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.1   eval_libero.py:264
+ 13%|█▎        | 20/154 [08:36<56:38, 25.36s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:16:00] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the darkcolored rounded                       
+                          vessel situated between the flat dish                    
+                          and the small ceramic baking dish and                    
+                          position it atop the flat dish                           
+10/07 [13:16:02] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:16:26] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 21   eval_libero.py:255
+                 INFO     | >> # successes: 2 (9.5%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.22s/it][A100%|██████████| 1/1 [00:25<00:00, 25.22s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09523809523809523                                      
+ 14%|█▎        | 21/154 [09:03<56:57, 25.69s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:16:27] INFO     | >>                                   eval_libero.py:131
+                          Task: in preparation for lunch i need                    
+                          you to pick up the black bowl from the                   
+                          wooden cabinet and place it on the                       
+                          plate                                                    
+10/07 [13:16:28] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:16:53] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 22   eval_libero.py:255
+                 INFO     | >> # successes: 2 (9.1%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:26<00:00, 26.04s/it][A100%|██████████| 1/1 [00:26<00:00, 26.04s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09090909090909091                                      
+ 14%|█▍        | 22/154 [09:30<57:35, 26.18s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:16:54] INFO     | >>                                   eval_libero.py:131
+                          Task: could you place the black bowl                     
+                          located next the cookie box onto the                     
+                          plate                                                    
+10/07 [13:16:56] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:17:20] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 23   eval_libero.py:255
+                 INFO     | >> # successes: 2 (8.7%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.37s/it][A100%|██████████| 1/1 [00:25<00:00, 25.37s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.08695652173913043                                      
+ 15%|█▍        | 23/154 [09:57<57:27, 26.32s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:17:21] INFO     | >>                                   eval_libero.py:131
+                          Task: id appreciate if you could pick                    
+                          up the black bowl next to the cookie                     
+                          box and place it on the plate for me                     
+10/07 [13:17:22] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:17:47] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 24   eval_libero.py:255
+                 INFO     | >> # successes: 2 (8.3%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:26<00:00, 26.64s/it][A100%|██████████| 1/1 [00:26<00:00, 26.64s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.08333333333333333                                      
+ 16%|█▌        | 24/154 [10:24<58:03, 26.79s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:17:49] INFO     | >>                                   eval_libero.py:131
+                          Task: on this lovely afternoon would                     
+                          you mind picking up the black bowl                       
+                          from the ramekin and transferring it                     
+                          to the plate                                             
+10/07 [13:17:50] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:18:16] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 25   eval_libero.py:255
+                 INFO     | >> # successes: 2 (8.0%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:27<00:00, 27.73s/it][A100%|██████████| 1/1 [00:27<00:00, 27.73s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.08  eval_libero.py:264
+ 16%|█▌        | 25/154 [10:53<59:01, 27.46s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:18:18] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the black dish beside the                     
+                          cookie container and set it on the                       
+                          platter                                                  
+10/07 [13:18:19] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:18:43] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 26   eval_libero.py:255
+                 INFO     | >> # successes: 2 (7.7%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.44s/it][A100%|██████████| 1/1 [00:25<00:00, 25.44s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.07692307692307693                                      
+ 17%|█▋        | 26/154 [11:20<58:05, 27.23s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:18:44] INFO     | >>                                   eval_libero.py:131
+                          Task: pick up the darkcolored round                      
+                          container adjacent to the rectangular                    
+                          receptacle for baked treats and                          
+                          position it on the flat dish                             
+10/07 [13:18:46] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:19:10] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 27   eval_libero.py:255
+                 INFO     | >> # successes: 2 (7.4%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.62s/it][A100%|██████████| 1/1 [00:25<00:00, 25.62s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.07407407407407407                                      
+ 18%|█▊        | 27/154 [11:47<57:25, 27.13s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:19:11] INFO     | >>                                   eval_libero.py:131
+                          Task: can you put the black bowl from                    
+                          the top drawer of the wooden cabinet                     
+                          on the plate                                             
+10/07 [13:19:13] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:19:37] INFO     | >> Success: False                    eval_libero.py:254
+10/07 [13:19:38] INFO     | >> # episodes completed so far: 28   eval_libero.py:255
+                 INFO     | >> # successes: 2 (7.1%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:26<00:00, 26.20s/it][A100%|██████████| 1/1 [00:26<00:00, 26.20s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.07142857142857142                                      
+ 18%|█▊        | 28/154 [12:14<57:11, 27.23s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:19:39] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the darkhued mixing                           
+                          container adjacent to the small baking                   
+                          dish and set it atop the dish used for                   
+                          serving meals                                            
+10/07 [13:19:40] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:20:03] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 29   eval_libero.py:255
+                 INFO     | >> # successes: 2 (6.9%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:24<00:00, 24.12s/it][A100%|██████████| 1/1 [00:24<00:00, 24.12s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.06896551724137931                                      
+ 19%|█▉        | 29/154 [12:40<55:35, 26.68s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:20:04] INFO     | >>                                   eval_libero.py:131
+                          Task: can you put the black bowl next                    
+                          to the cookie box onto the plate for                     
+                          me                                                       
+10/07 [13:20:06] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:20:12] INFO     | >> Success: True                     eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 30   eval_libero.py:255
+                 INFO     | >> # successes: 3 (10.0%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:07<00:00,  7.47s/it][A100%|██████████| 1/1 [00:07<00:00,  7.47s/it]
+                 INFO     | >> Current task success rate: 1.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.1   eval_libero.py:264
+ 19%|█▉        | 30/154 [12:49<44:01, 21.30s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:20:13] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the darkcolored container                     
+                          located on the cooking appliance and                     
+                          set it on the dish                                       
+10/07 [13:20:14] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:20:39] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 31   eval_libero.py:255
+                 INFO     | >> # successes: 3 (9.7%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:26<00:00, 26.35s/it][A100%|██████████| 1/1 [00:26<00:00, 26.35s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.0967741935483871                                       
+ 20%|██        | 31/154 [13:16<47:33, 23.20s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:20:41] INFO     | >>                                   eval_libero.py:131
+                          Task: retrieve the dark bowl from the                    
+                          upper drawer of the wooden cupboard                      
+                          and set it on the plate                                  
+10/07 [13:20:42] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:21:08] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 32   eval_libero.py:255
+                 INFO     | >> # successes: 3 (9.4%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:27<00:00, 27.47s/it][A100%|██████████| 1/1 [00:27<00:00, 27.47s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09375                                                  
+ 21%|██        | 32/154 [13:45<50:33, 24.86s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:21:09] INFO     | >>                                   eval_libero.py:131
+                          Task: before the cookies cool pick up                    
+                          the black bowl next to their box and                     
+                          transfer it to the plate                                 
+10/07 [13:21:11] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:21:17] INFO     | >> Success: True                     eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 33   eval_libero.py:255
+                 INFO     | >> # successes: 4 (12.1%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:07<00:00,  7.76s/it][A100%|██████████| 1/1 [00:07<00:00,  7.76s/it]
+                 INFO     | >> Current task success rate: 1.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.12121212121212122                                      
+ 21%|██▏       | 33/154 [13:54<40:33, 20.11s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:21:18] INFO     | >>                                   eval_libero.py:131
+                          Task: grab the darkcolored dish                          
+                          adjacent to the small ceramic dish and                   
+                          set it upon the flat dish used for                       
+                          serving food                                             
+10/07 [13:21:20] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:21:43] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 34   eval_libero.py:255
+                 INFO     | >> # successes: 4 (11.8%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.07s/it][A100%|██████████| 1/1 [00:25<00:00, 25.07s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11764705882352941                                      
+ 22%|██▏       | 34/154 [14:20<43:57, 21.98s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:21:45] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the darkhued receptacle                       
+                          located adjacent to the dish and                         
+                          position it atop the dish                                
+10/07 [13:21:46] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:22:10] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 35   eval_libero.py:255
+                 INFO     | >> # successes: 4 (11.4%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.61s/it][A100%|██████████| 1/1 [00:25<00:00, 25.62s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11428571428571428                                      
+ 23%|██▎       | 35/154 [14:47<46:31, 23.46s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:22:12] INFO     | >>                                   eval_libero.py:131
+                          Task: can you place the black bowl                       
+                          from the cookie box onto the plate                       
+10/07 [13:22:13] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:22:38] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 36   eval_libero.py:255
+                 INFO     | >> # successes: 4 (11.1%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:26<00:00, 26.06s/it][A100%|██████████| 1/1 [00:26<00:00, 26.06s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1111111111111111                                       
+ 23%|██▎       | 36/154 [15:15<48:25, 24.63s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:22:39] INFO     | >>                                   eval_libero.py:131
+                          Task: before we start cooking pick up                    
+                          the black bowl in the top drawer of                      
+                          the wooden cabinet and place it on the                   
+                          clean plate                                              
+10/07 [13:22:40] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:23:06] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 37   eval_libero.py:255
+                 INFO     | >> # successes: 4 (10.8%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:27<00:00, 27.31s/it][A100%|██████████| 1/1 [00:27<00:00, 27.31s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10810810810810811                                      
+ 24%|██▍       | 37/154 [15:43<50:19, 25.81s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:23:08] INFO     | >>                                   eval_libero.py:131
+                          Task: before the guests arrive pick up                   
+                          the black bowl in the top drawer of                      
+                          the wooden cabinet and place it on the                   
+                          plate on the counter                                     
+10/07 [13:23:09] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:23:37] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 38   eval_libero.py:255
+                 INFO     | >> # successes: 4 (10.5%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:29<00:00, 29.32s/it][A100%|██████████| 1/1 [00:29<00:00, 29.32s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10526315789473684                                      
+ 25%|██▍       | 38/154 [16:14<52:40, 27.25s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:23:38] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the dark bowl from the                        
+                          biscuit box and set it on the plate                      
+10/07 [13:23:40] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:24:04] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 39   eval_libero.py:255
+                 INFO     | >> # successes: 4 (10.3%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:25<00:00, 25.74s/it][A100%|██████████| 1/1 [00:25<00:00, 25.74s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10256410256410256                                      
+ 25%|██▌       | 39/154 [16:41<52:06, 27.19s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:24:06] INFO     | >>                                   eval_libero.py:131
+                          Task: before we start cooking remember                   
+                          to pick up the tomato sauce and put it                   
+                          in the basket                                            
+10/07 [13:24:08] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:24:28] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 40   eval_libero.py:255
+                 INFO     | >> # successes: 4 (10.0%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.52s/it][A100%|██████████| 1/1 [00:21<00:00, 21.52s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.1   eval_libero.py:264
+ 26%|██▌       | 40/154 [17:05<49:51, 26.24s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:24:29] INFO     | >>                                   eval_libero.py:131
+                          Task: to complete your task pick up                      
+                          the chocolate pudding and place it in                    
+                          the basket                                               
+10/07 [13:24:31] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:24:50] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 41   eval_libero.py:255
+                 INFO     | >> # successes: 4 (9.8%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.18s/it][A100%|██████████| 1/1 [00:21<00:00, 21.18s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.0975609756097561                                       
+ 27%|██▋       | 41/154 [17:27<47:17, 25.11s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:24:52] INFO     | >>                                   eval_libero.py:131
+                          Task: could you please put the                           
+                          chocolate pudding in the basket                          
+10/07 [13:24:53] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:25:14] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 42   eval_libero.py:255
+                 INFO     | >> # successes: 4 (9.5%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.69s/it][A100%|██████████| 1/1 [00:22<00:00, 22.70s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09523809523809523                                      
+ 27%|██▋       | 42/154 [17:51<46:15, 24.78s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:25:16] INFO     | >>                                   eval_libero.py:131
+                          Task: retrieve the bbq sauce and set                     
+                          it in the basket                                         
+10/07 [13:25:17] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:25:39] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 43   eval_libero.py:255
+                 INFO     | >> # successes: 4 (9.3%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:23<00:00, 23.40s/it][A100%|██████████| 1/1 [00:23<00:00, 23.40s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09302325581395349                                      
+ 28%|██▊       | 43/154 [18:16<45:52, 24.79s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:25:40] INFO     | >>                                   eval_libero.py:131
+                          Task: to complete this chore simply                      
+                          pick up the milk container and place                     
+                          it inside the laundry basket just                        
+                          kidding use the food basket                              
+10/07 [13:25:42] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:26:01] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 44   eval_libero.py:255
+                 INFO     | >> # successes: 4 (9.1%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.63s/it][A100%|██████████| 1/1 [00:20<00:00, 20.63s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09090909090909091                                      
+ 29%|██▊       | 44/154 [18:38<43:48, 23.89s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:26:02] INFO     | >>                                   eval_libero.py:131
+                          Task: pick up the yellow dairy product                   
+                          used for cooking and spreading and                       
+                          place it in the woven container for                      
+                          holding items                                            
+10/07 [13:26:03] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:26:24] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 45   eval_libero.py:255
+                 INFO     | >> # successes: 4 (8.9%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.46s/it][A100%|██████████| 1/1 [00:21<00:00, 21.46s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.08888888888888889                                      
+ 29%|██▉       | 45/154 [19:01<42:42, 23.51s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:26:25] INFO     | >>                                   eval_libero.py:131
+                          Task: pick up the dessert made from                      
+                          cocoa and milk and place it in the                       
+                          woven container for carrying items                       
+10/07 [13:26:26] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:26:46] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 46   eval_libero.py:255
+                 INFO     | >> # successes: 4 (8.7%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.95s/it][A100%|██████████| 1/1 [00:20<00:00, 20.95s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.08695652173913043                                      
+ 30%|██▉       | 46/154 [19:23<41:38, 23.13s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:26:47] INFO     | >>                                   eval_libero.py:131
+                          Task: pick up the condiment used for                     
+                          enhancing the flavor of leafy greens                     
+                          and place it in the woven container                      
+                          for carrying items                                       
+10/07 [13:26:49] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:27:08] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 47   eval_libero.py:255
+                 INFO     | >> # successes: 4 (8.5%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.08s/it][A100%|██████████| 1/1 [00:21<00:00, 21.08s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.0851063829787234                                       
+ 31%|███       | 47/154 [19:45<40:55, 22.95s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:27:10] INFO     | >>                                   eval_libero.py:131
+                          Task: grasp the cold dairy liquid                        
+                          container and position it within the                     
+                          woven carrying accessory                                 
+10/07 [13:27:11] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:27:30] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 48   eval_libero.py:255
+                 INFO     | >> # successes: 4 (8.3%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.19s/it][A100%|██████████| 1/1 [00:20<00:00, 20.19s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.08333333333333333                                      
+ 31%|███       | 48/154 [20:07<39:42, 22.47s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:27:31] INFO     | >>                                   eval_libero.py:131
+                          Task: take the bbq sauce and set it in                   
+                          the basket                                               
+10/07 [13:27:33] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:27:38] INFO     | >> Success: True                     eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 49   eval_libero.py:255
+                 INFO     | >> # successes: 5 (10.2%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:06<00:00,  6.59s/it][A100%|██████████| 1/1 [00:06<00:00,  6.59s/it]
+                 INFO     | >> Current task success rate: 1.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10204081632653061                                      
+ 32%|███▏      | 49/154 [20:15<31:42, 18.12s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:27:39] INFO     | >>                                   eval_libero.py:131
+                          Task: could you put the alphabet soup                    
+                          in the basket please                                     
+10/07 [13:27:40] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:28:00] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 50   eval_libero.py:255
+                 INFO     | >> # successes: 5 (10.0%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.34s/it][A100%|██████████| 1/1 [00:21<00:00, 21.34s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.1   eval_libero.py:264
+ 32%|███▏      | 50/154 [20:37<33:46, 19.48s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:28:02] INFO     | >>                                   eval_libero.py:131
+                          Task: pick up the creamy cocoabased                      
+                          dessert and place it in the woven                        
+                          container                                                
+10/07 [13:28:03] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:28:22] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 51   eval_libero.py:255
+                 INFO     | >> # successes: 5 (9.8%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.75s/it][A100%|██████████| 1/1 [00:20<00:00, 20.76s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09803921568627451                                      
+ 33%|███▎      | 51/154 [20:59<34:48, 20.27s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:28:24] INFO     | >>                                   eval_libero.py:131
+                          Task: the cooking instructions say we                    
+                          should pick up the butter and place it                   
+                          in the basket first                                      
+10/07 [13:28:25] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:28:45] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 52   eval_libero.py:255
+                 INFO     | >> # successes: 5 (9.6%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.43s/it][A100%|██████████| 1/1 [00:21<00:00, 21.43s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09615384615384616                                      
+ 34%|███▍      | 52/154 [21:22<35:38, 20.97s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:28:46] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the milk and deposit it in                    
+                          the basket                                               
+10/07 [13:28:47] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:29:07] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 53   eval_libero.py:255
+                 INFO     | >> # successes: 5 (9.4%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.54s/it][A100%|██████████| 1/1 [00:20<00:00, 20.54s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09433962264150944                                      
+ 34%|███▍      | 53/154 [21:44<35:40, 21.19s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:29:08] INFO     | >>                                   eval_libero.py:131
+                          Task: as part of your kitchen duties                     
+                          today pick up the butter and place it                    
+                          in the storage basket                                    
+10/07 [13:29:09] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:29:29] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 54   eval_libero.py:255
+                 INFO     | >> # successes: 5 (9.3%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.74s/it][A100%|██████████| 1/1 [00:20<00:00, 20.74s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09259259259259259                                      
+ 35%|███▌      | 54/154 [22:06<35:39, 21.40s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:29:30] INFO     | >>                                   eval_libero.py:131
+                          Task: can you make sure the ketchup                      
+                          ends up in the basket                                    
+10/07 [13:29:32] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:29:41] INFO     | >> Success: True                     eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 55   eval_libero.py:255
+                 INFO     | >> # successes: 6 (10.9%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:10<00:00, 10.44s/it][A100%|██████████| 1/1 [00:10<00:00, 10.44s/it]
+                 INFO     | >> Current task success rate: 1.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10909090909090909                                      
+ 36%|███▌      | 55/154 [22:18<30:35, 18.54s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:29:42] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the spread often used on                      
+                          bagels and move it to the woven                          
+                          container                                                
+10/07 [13:29:43] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:30:04] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 56   eval_libero.py:255
+                 INFO     | >> # successes: 6 (10.7%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.47s/it][A100%|██████████| 1/1 [00:22<00:00, 22.47s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10714285714285714                                      
+ 36%|███▋      | 56/154 [22:41<32:48, 20.08s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:30:06] INFO     | >>                                   eval_libero.py:131
+                          Task: pick up the condiment generally                    
+                          used for grilling and place it in the                    
+                          container for carrying items                             
+10/07 [13:30:07] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:30:28] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 57   eval_libero.py:255
+                 INFO     | >> # successes: 6 (10.5%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.45s/it][A100%|██████████| 1/1 [00:22<00:00, 22.45s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10526315789473684                                      
+ 37%|███▋      | 57/154 [23:05<34:18, 21.23s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:30:30] INFO     | >>                                   eval_libero.py:131
+                          Task: grasp the container of liquid                      
+                          condiment and deposit it in the woven                    
+                          holder                                                   
+10/07 [13:30:31] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:30:51] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 58   eval_libero.py:255
+                 INFO     | >> # successes: 6 (10.3%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.70s/it][A100%|██████████| 1/1 [00:21<00:00, 21.70s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10344827586206896                                      
+ 38%|███▊      | 58/154 [23:28<34:54, 21.81s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:30:53] INFO     | >>                                   eval_libero.py:131
+                          Task: grasp the citrus beverage                          
+                          container and deposit it in the woven                    
+                          carrying accessory                                       
+10/07 [13:30:54] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:31:13] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 59   eval_libero.py:255
+                 INFO     | >> # successes: 6 (10.2%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.56s/it][A100%|██████████| 1/1 [00:20<00:00, 20.56s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1016949152542373                                       
+ 38%|███▊      | 59/154 [23:50<34:32, 21.82s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:31:14] INFO     | >>                                   eval_libero.py:131
+                          Task: grasp the citrus beverage and                      
+                          deposit it into the woven storage                        
+                          container                                                
+10/07 [13:31:16] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:31:35] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 60   eval_libero.py:255
+                 INFO     | >> # successes: 6 (10.0%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.08s/it][A100%|██████████| 1/1 [00:21<00:00, 21.08s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.1   eval_libero.py:264
+ 39%|███▉      | 60/154 [24:12<34:24, 21.96s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:31:37] INFO     | >>                                   eval_libero.py:131
+                          Task: before you leave remember to                       
+                          pick up the ketchup and place it in                      
+                          the basket by the door                                   
+10/07 [13:31:38] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:31:58] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 61   eval_libero.py:255
+                 INFO     | >> # successes: 6 (9.8%)             eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.17s/it][A100%|██████████| 1/1 [00:21<00:00, 21.17s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09836065573770492                                      
+ 40%|███▉      | 61/154 [24:35<34:19, 22.15s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:31:59] INFO     | >>                                   eval_libero.py:131
+                          Task: for our cookout later could you                    
+                          pick up the bbq sauce and put it in                      
+                          the basket                                               
+10/07 [13:32:01] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:32:07] INFO     | >> Success: True                     eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 62   eval_libero.py:255
+                 INFO     | >> # successes: 7 (11.3%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:07<00:00,  7.16s/it][A100%|██████████| 1/1 [00:07<00:00,  7.16s/it]
+                 INFO     | >> Current task success rate: 1.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11290322580645161                                      
+ 40%|████      | 62/154 [24:44<27:42, 18.07s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:32:08] INFO     | >>                                   eval_libero.py:131
+                          Task: collect the tomato sauce and                       
+                          deposit it in the basket                                 
+10/07 [13:32:09] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:32:28] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 63   eval_libero.py:255
+                 INFO     | >> # successes: 7 (11.1%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.53s/it][A100%|██████████| 1/1 [00:20<00:00, 20.53s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1111111111111111                                       
+ 41%|████      | 63/154 [25:05<28:58, 19.10s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:32:29] INFO     | >>                                   eval_libero.py:131
+                          Task: can you make sure the orange                       
+                          juice ends up in the basket                              
+10/07 [13:32:31] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:32:51] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 64   eval_libero.py:255
+                 INFO     | >> # successes: 7 (10.9%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.47s/it][A100%|██████████| 1/1 [00:21<00:00, 21.48s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.109375                                                 
+ 42%|████▏     | 64/154 [25:28<30:16, 20.18s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:32:52] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the cream cheese and                          
+                          position it in the basket                                
+10/07 [13:32:53] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:33:13] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 65   eval_libero.py:255
+                 INFO     | >> # successes: 7 (10.8%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.51s/it][A100%|██████████| 1/1 [00:21<00:00, 21.51s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1076923076923077                                       
+ 42%|████▏     | 65/154 [25:50<31:03, 20.93s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:33:14] INFO     | >>                                   eval_libero.py:131
+                          Task: please put the tomato sauce in                     
+                          the basket                                               
+10/07 [13:33:16] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:33:36] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 66   eval_libero.py:255
+                 INFO     | >> # successes: 7 (10.6%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.53s/it][A100%|██████████| 1/1 [00:21<00:00, 21.53s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10606060606060606                                      
+ 43%|████▎     | 66/154 [26:13<31:24, 21.41s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:33:37] INFO     | >>                                   eval_libero.py:131
+                          Task: for our picnic later please pick                   
+                          up the chocolate pudding and place it                    
+                          in the basket                                            
+10/07 [13:33:39] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:33:59] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 67   eval_libero.py:255
+                 INFO     | >> # successes: 7 (10.4%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.49s/it][A100%|██████████| 1/1 [00:21<00:00, 21.49s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1044776119402985                                       
+ 44%|████▎     | 67/154 [26:36<31:36, 21.80s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:34:00] INFO     | >>                                   eval_libero.py:131
+                          Task: could you put the tomato sauce                     
+                          in the basket for me                                     
+10/07 [13:34:01] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:34:06] INFO     | >> Success: True                     eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 68   eval_libero.py:255
+                 INFO     | >> # successes: 8 (11.8%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:06<00:00,  6.38s/it][A100%|██████████| 1/1 [00:06<00:00,  6.38s/it]
+                 INFO     | >> Current task success rate: 1.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11764705882352941                                      
+ 44%|████▍     | 68/154 [26:43<25:02, 17.48s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:34:07] INFO     | >>                                   eval_libero.py:131
+                          Task: pick up the spreadable dairy                       
+                          product and place it in the woven                        
+                          carrying container                                       
+10/07 [13:34:08] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:34:28] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 69   eval_libero.py:255
+                 INFO     | >> # successes: 8 (11.6%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.59s/it][A100%|██████████| 1/1 [00:20<00:00, 20.59s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11594202898550725                                      
+ 45%|████▍     | 69/154 [27:05<26:33, 18.75s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:34:29] INFO     | >>                                   eval_libero.py:131
+                          Task: the kitchen is getting organized                   
+                          please pick up the butter and place it                   
+                          in the basket on your right                              
+10/07 [13:34:30] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:34:50] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 70   eval_libero.py:255
+                 INFO     | >> # successes: 8 (11.4%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.10s/it][A100%|██████████| 1/1 [00:21<00:00, 21.10s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11428571428571428                                      
+ 45%|████▌     | 70/154 [27:27<27:40, 19.77s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:34:51] INFO     | >>                                   eval_libero.py:131
+                          Task: grasp the citrus beverage                          
+                          container and deposit it in the woven                    
+                          carrier                                                  
+10/07 [13:34:52] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:35:12] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 71   eval_libero.py:255
+                 INFO     | >> # successes: 8 (11.3%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.81s/it][A100%|██████████| 1/1 [00:20<00:00, 20.81s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11267605633802817                                      
+ 46%|████▌     | 71/154 [27:49<28:16, 20.44s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:35:13] INFO     | >>                                   eval_libero.py:131
+                          Task: grasp the solid dairy product                      
+                          and deposit it in the woven container                    
+10/07 [13:35:14] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:35:33] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 72   eval_libero.py:255
+                 INFO     | >> # successes: 8 (11.1%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.42s/it][A100%|██████████| 1/1 [00:20<00:00, 20.42s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1111111111111111                                       
+ 47%|████▋     | 72/154 [28:10<28:22, 20.76s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:35:35] INFO     | >>                                   eval_libero.py:131
+                          Task: pick up the condiment used for                     
+                          enhancing the flavor of greens and                       
+                          relocate it to the carrying container                    
+                          designed for holding groceries                           
+10/07 [13:35:36] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:35:57] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 73   eval_libero.py:255
+                 INFO     | >> # successes: 8 (11.0%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.03s/it][A100%|██████████| 1/1 [00:22<00:00, 22.03s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1095890410958904                                       
+ 47%|████▋     | 73/154 [28:34<29:04, 21.54s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:35:58] INFO     | >>                                   eval_libero.py:131
+                          Task: grasp the red condiment                            
+                          container and set it inside the woven                    
+                          holder                                                   
+10/07 [13:36:00] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:36:19] INFO     | >> Success: False                    eval_libero.py:254
+10/07 [13:36:20] INFO     | >> # episodes completed so far: 74   eval_libero.py:255
+                 INFO     | >> # successes: 8 (10.8%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.31s/it][A100%|██████████| 1/1 [00:21<00:00, 21.31s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10810810810810811                                      
+ 48%|████▊     | 74/154 [28:56<29:10, 21.88s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:36:21] INFO     | >>                                   eval_libero.py:131
+                          Task: grasp the creamy dairy spread                      
+                          and deposit it into the woven carrying                   
+                          container                                                
+10/07 [13:36:22] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:36:41] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 75   eval_libero.py:255
+                 INFO     | >> # successes: 8 (10.7%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.59s/it][A100%|██████████| 1/1 [00:20<00:00, 20.59s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10666666666666667                                      
+ 49%|████▊     | 75/154 [29:18<28:43, 21.82s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:36:42] INFO     | >>                                   eval_libero.py:131
+                          Task: pull open the uppermost sliding                    
+                          storage compartment and place the                        
+                          rounded dish within                                      
+10/07 [13:36:43] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:37:04] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 76   eval_libero.py:255
+                 INFO     | >> # successes: 8 (10.5%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.71s/it][A100%|██████████| 1/1 [00:21<00:00, 21.71s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10526315789473684                                      
+ 49%|████▉     | 76/154 [29:41<28:43, 22.10s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:37:05] INFO     | >>                                   eval_libero.py:131
+                          Task: could you kindly put the bowl                      
+                          onto the plate for me                                    
+10/07 [13:37:06] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:37:28] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 77   eval_libero.py:255
+                 INFO     | >> # successes: 8 (10.4%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.57s/it][A100%|██████████| 1/1 [00:22<00:00, 22.57s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1038961038961039                                       
+ 50%|█████     | 77/154 [30:05<28:59, 22.59s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:37:29] INFO     | >>                                   eval_libero.py:131
+                          Task: place the rounded container for                    
+                          food on the elevated storage structure                   
+10/07 [13:37:30] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:37:51] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 78   eval_libero.py:255
+                 INFO     | >> # successes: 8 (10.3%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.98s/it][A100%|██████████| 1/1 [00:21<00:00, 21.98s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10256410256410256                                      
+ 51%|█████     | 78/154 [30:28<28:48, 22.74s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:37:52] INFO     | >>                                   eval_libero.py:131
+                          Task: position the wine container atop                   
+                          the cupboard                                             
+10/07 [13:37:53] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:38:15] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 79   eval_libero.py:255
+                 INFO     | >> # successes: 8 (10.1%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.59s/it][A100%|██████████| 1/1 [00:22<00:00, 22.59s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10126582278481013                                      
+ 51%|█████▏    | 79/154 [30:51<28:48, 23.04s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:38:16] INFO     | >>                                   eval_libero.py:131
+                          Task: please place the bowl on the                       
+                          stove                                                    
+10/07 [13:38:17] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:38:21] INFO     | >> Success: True                     eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 80   eval_libero.py:255
+                 INFO     | >> # successes: 9 (11.2%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:05<00:00,  5.17s/it][A100%|██████████| 1/1 [00:05<00:00,  5.17s/it]
+                 INFO     | >> Current task success rate: 1.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1125                                                   
+ 52%|█████▏    | 80/154 [30:58<22:14, 18.03s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:38:22] INFO     | >>                                   eval_libero.py:131
+                          Task: lets make some magic happen                        
+                          start by turning on the stove                            
+10/07 [13:38:23] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:38:44] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 81   eval_libero.py:255
+                 INFO     | >> # successes: 9 (11.1%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.60s/it][A100%|██████████| 1/1 [00:21<00:00, 21.61s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1111111111111111                                       
+ 53%|█████▎    | 81/154 [31:21<23:39, 19.44s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:38:45] INFO     | >>                                   eval_libero.py:131
+                          Task: after you finish that task your                    
+                          next job is to open the middle drawer                    
+                          of the cabinet                                           
+10/07 [13:38:46] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:38:54] INFO     | >> Success: True                     eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 82   eval_libero.py:255
+                 INFO     | >> # successes: 10 (12.2%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:09<00:00,  9.20s/it][A100%|██████████| 1/1 [00:09<00:00,  9.21s/it]
+                 INFO     | >> Current task success rate: 1.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.12195121951219512                                      
+ 53%|█████▎    | 82/154 [31:31<20:02, 16.71s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:38:55] INFO     | >>                                   eval_libero.py:131
+                          Task: the instructions say we should                     
+                          put exactly 8 ounces of cream cheese                     
+                          in the bowl                                              
+10/07 [13:38:56] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:39:17] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 83   eval_libero.py:255
+                 INFO     | >> # successes: 10 (12.0%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.89s/it][A100%|██████████| 1/1 [00:21<00:00, 21.89s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.12048192771084337                                      
+ 54%|█████▍    | 83/154 [31:54<22:00, 18.60s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:39:18] INFO     | >>                                   eval_libero.py:131
+                          Task: ignite the appliance used for                      
+                          cooking                                                  
+10/07 [13:39:19] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:39:40] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 84   eval_libero.py:255
+                 INFO     | >> # successes: 10 (11.9%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.51s/it][A100%|██████████| 1/1 [00:21<00:00, 21.51s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11904761904761904                                      
+ 55%|█████▍    | 84/154 [32:17<23:07, 19.82s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:39:41] INFO     | >>                                   eval_libero.py:131
+                          Task: place the rounded dish used for                    
+                          eating cereal inside the flat dish                       
+                          often used for serving meals                             
+10/07 [13:39:42] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:40:03] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 85   eval_libero.py:255
+                 INFO     | >> # successes: 10 (11.8%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.96s/it][A100%|██████████| 1/1 [00:21<00:00, 21.96s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11764705882352941                                      
+ 55%|█████▌    | 85/154 [32:40<23:54, 20.79s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:40:04] INFO     | >>                                   eval_libero.py:131
+                          Task: push the plate to the front of                     
+                          the stove but dont move any other                        
+                          kitchenware                                              
+10/07 [13:40:05] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:40:26] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 86   eval_libero.py:255
+                 INFO     | >> # successes: 10 (11.6%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.28s/it][A100%|██████████| 1/1 [00:22<00:00, 22.28s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11627906976744186                                      
+ 56%|█████▌    | 86/154 [33:03<24:27, 21.58s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:40:27] INFO     | >>                                   eval_libero.py:131
+                          Task: place the rounded container used                   
+                          for holding food items onto the higher                   
+                          storage area typically found in                          
+                          kitchens                                                 
+10/07 [13:40:28] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:40:49] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 87   eval_libero.py:255
+                 INFO     | >> # successes: 10 (11.5%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.10s/it][A100%|██████████| 1/1 [00:22<00:00, 22.10s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11494252873563218                                      
+ 56%|█████▋    | 87/154 [33:26<24:38, 22.07s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:40:50] INFO     | >>                                   eval_libero.py:131
+                          Task: place the rounded container used                   
+                          for eating into the flat dish                            
+                          typically used as a base for a meal                      
+10/07 [13:40:52] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:41:13] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 88   eval_libero.py:255
+                 INFO     | >> # successes: 10 (11.4%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.43s/it][A100%|██████████| 1/1 [00:22<00:00, 22.43s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11363636363636363                                      
+ 57%|█████▋    | 88/154 [33:50<24:46, 22.52s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:41:14] INFO     | >>                                   eval_libero.py:131
+                          Task: could you put the bowl on top of                   
+                          the cabinet its looking a bit                            
+                          cluttered down here                                      
+10/07 [13:41:15] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:41:37] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 89   eval_libero.py:255
+                 INFO     | >> # successes: 10 (11.2%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.62s/it][A100%|██████████| 1/1 [00:22<00:00, 22.62s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11235955056179775                                      
+ 58%|█████▊    | 89/154 [34:14<24:47, 22.88s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:41:38] INFO     | >>                                   eval_libero.py:131
+                          Task: move the dish toward the front                     
+                          of the cooker                                            
+10/07 [13:41:39] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:42:01] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 90   eval_libero.py:255
+                 INFO     | >> # successes: 10 (11.1%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:23<00:00, 23.02s/it][A100%|██████████| 1/1 [00:23<00:00, 23.02s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1111111111111111                                       
+ 58%|█████▊    | 90/154 [34:38<24:48, 23.26s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:42:02] INFO     | >>                                   eval_libero.py:131
+                          Task: please store the bowl in the top                   
+                          drawer                                                   
+10/07 [13:42:03] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:42:24] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 91   eval_libero.py:255
+                 INFO     | >> # successes: 10 (11.0%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.16s/it][A100%|██████████| 1/1 [00:22<00:00, 22.16s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10989010989010989                                      
+ 59%|█████▉    | 91/154 [35:01<24:26, 23.27s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:42:25] INFO     | >>                                   eval_libero.py:131
+                          Task: place the cream cheese into the                    
+                          bowl                                                     
+10/07 [13:42:26] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:42:47] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 92   eval_libero.py:255
+                 INFO     | >> # successes: 10 (10.9%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.17s/it][A100%|██████████| 1/1 [00:22<00:00, 22.18s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10869565217391304                                      
+ 60%|█████▉    | 92/154 [35:24<24:03, 23.28s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:42:48] INFO     | >>                                   eval_libero.py:131
+                          Task: please place the bowl on top of                    
+                          the plate                                                
+10/07 [13:42:50] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:43:00] INFO     | >> Success: True                     eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 93   eval_libero.py:255
+                 INFO     | >> # successes: 11 (11.8%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:11<00:00, 11.91s/it][A100%|██████████| 1/1 [00:11<00:00, 11.92s/it]
+                 INFO     | >> Current task success rate: 1.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11827956989247312                                      
+ 60%|██████    | 93/154 [35:37<20:32, 20.21s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:43:02] INFO     | >>                                   eval_libero.py:131
+                          Task: slide the upper drawer and place                   
+                          the dish within                                          
+10/07 [13:43:03] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:43:24] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 94   eval_libero.py:255
+                 INFO     | >> # successes: 11 (11.7%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.16s/it][A100%|██████████| 1/1 [00:22<00:00, 22.16s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11702127659574468                                      
+ 61%|██████    | 94/154 [36:01<21:08, 21.14s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:43:25] INFO     | >>                                   eval_libero.py:131
+                          Task: could i ask you to make sure the                   
+                          cream cheese ends up in the bowl                         
+10/07 [13:43:26] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:43:48] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 95   eval_libero.py:255
+                 INFO     | >> # successes: 11 (11.6%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:23<00:00, 23.43s/it][A100%|██████████| 1/1 [00:23<00:00, 23.43s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11578947368421053                                      
+ 62%|██████▏   | 95/154 [36:25<21:48, 22.17s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:43:49] INFO     | >>                                   eval_libero.py:131
+                          Task: the bowl is in your way just put                   
+                          it up on the cabinet out of the way                      
+10/07 [13:43:51] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:44:12] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 96   eval_libero.py:255
+                 INFO     | >> # successes: 11 (11.5%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.20s/it][A100%|██████████| 1/1 [00:22<00:00, 22.20s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11458333333333333                                      
+ 62%|██████▏   | 96/154 [36:49<21:46, 22.53s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:44:13] INFO     | >>                                   eval_libero.py:131
+                          Task: open the cabinets center drawer                    
+                          not the top or bottom just the middle                    
+                          one                                                      
+10/07 [13:44:14] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:44:35] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 97   eval_libero.py:255
+                 INFO     | >> # successes: 11 (11.3%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.27s/it][A100%|██████████| 1/1 [00:22<00:00, 22.27s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1134020618556701                                       
+ 63%|██████▎   | 97/154 [37:12<21:39, 22.80s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:44:36] INFO     | >>                                   eval_libero.py:131
+                          Task: place the container holding                        
+                          fermented grape drink on the upper                       
+                          storage unit                                             
+10/07 [13:44:37] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:44:58] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 98   eval_libero.py:255
+                 INFO     | >> # successes: 11 (11.2%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 22.00s/it][A100%|██████████| 1/1 [00:21<00:00, 22.00s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11224489795918367                                      
+ 64%|██████▎   | 98/154 [37:35<21:22, 22.90s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:44:59] INFO     | >>                                   eval_libero.py:131
+                          Task: pull out the central storage                       
+                          compartment of the furniture piece                       
+                          used for storing items                                   
+10/07 [13:45:01] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:45:23] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 99   eval_libero.py:255
+                 INFO     | >> # successes: 11 (11.1%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:24<00:00, 24.12s/it][A100%|██████████| 1/1 [00:24<00:00, 24.12s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1111111111111111                                       
+ 64%|██████▍   | 99/154 [38:00<21:38, 23.62s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:45:25] INFO     | >>                                   eval_libero.py:131
+                          Task: unlock the upper drawer and                        
+                          place the dish within                                    
+10/07 [13:45:26] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:45:48] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 100  eval_libero.py:255
+                 INFO     | >> # successes: 11 (11.0%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:23<00:00, 23.24s/it][A100%|██████████| 1/1 [00:23<00:00, 23.24s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.11  eval_libero.py:264
+ 65%|██████▍   | 100/154 [38:25<21:27, 23.85s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:45:49] INFO     | >>                                   eval_libero.py:131
+                          Task: can you place the wine bottle on                   
+                          top of the cabinet for me please                         
+10/07 [13:45:50] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:46:11] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 101  eval_libero.py:255
+                 INFO     | >> # successes: 11 (10.9%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.61s/it][A100%|██████████| 1/1 [00:21<00:00, 21.61s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10891089108910891                                      
+ 66%|██████▌   | 101/154 [38:48<20:46, 23.52s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:46:12] INFO     | >>                                   eval_libero.py:131
+                          Task: place the wine bottle on top of                    
+                          the cabinet please                                       
+10/07 [13:46:13] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:46:34] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 102  eval_libero.py:255
+                 INFO     | >> # successes: 11 (10.8%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.80s/it][A100%|██████████| 1/1 [00:21<00:00, 21.80s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10784313725490197                                      
+ 66%|██████▌   | 102/154 [39:11<20:13, 23.35s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:46:35] INFO     | >>                                   eval_libero.py:131
+                          Task: place the glass container of                       
+                          fermented grapes onto the storage unit                   
+                          designed for holding such items                          
+10/07 [13:46:36] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:46:57] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 103  eval_libero.py:255
+                 INFO     | >> # successes: 11 (10.7%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 22.00s/it][A100%|██████████| 1/1 [00:21<00:00, 22.00s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10679611650485436                                      
+ 67%|██████▋   | 103/154 [39:34<19:47, 23.28s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:46:58] INFO     | >>                                   eval_libero.py:131
+                          Task: pull out the uppermost sliding                     
+                          storage compartment and place the                        
+                          round dish used for eating within it                     
+10/07 [13:46:59] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:47:21] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 104  eval_libero.py:255
+                 INFO     | >> # successes: 11 (10.6%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.76s/it][A100%|██████████| 1/1 [00:22<00:00, 22.76s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10576923076923077                                      
+ 68%|██████▊   | 104/154 [39:58<19:33, 23.47s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:47:22] INFO     | >>                                   eval_libero.py:131
+                          Task: could you place the bowl onto                      
+                          the plate                                                
+10/07 [13:47:23] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:47:27] INFO     | >> Success: True                     eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 105  eval_libero.py:255
+                 INFO     | >> # successes: 12 (11.4%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:05<00:00,  5.16s/it][A100%|██████████| 1/1 [00:05<00:00,  5.16s/it]
+                 INFO     | >> Current task success rate: 1.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11428571428571428                                      
+ 68%|██████▊   | 105/154 [40:04<14:57, 18.32s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:47:28] INFO     | >>                                   eval_libero.py:131
+                          Task: push the plate to the front of                     
+                          the stove but leave the bowls where                      
+                          they are                                                 
+10/07 [13:47:29] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:47:50] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 106  eval_libero.py:255
+                 INFO     | >> # successes: 12 (11.3%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.13s/it][A100%|██████████| 1/1 [00:22<00:00, 22.13s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11320754716981132                                      
+ 69%|██████▉   | 106/154 [40:27<15:50, 19.80s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:47:51] INFO     | >>                                   eval_libero.py:131
+                          Task: push the flat dishware item to                     
+                          the front of the cooking appliance                       
+10/07 [13:47:52] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:48:13] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 107  eval_libero.py:255
+                 INFO     | >> # successes: 12 (11.2%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.88s/it][A100%|██████████| 1/1 [00:21<00:00, 21.88s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11214953271028037                                      
+ 69%|██████▉   | 107/154 [40:50<16:15, 20.76s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:48:14] INFO     | >>                                   eval_libero.py:131
+                          Task: switch on the burner                               
+10/07 [13:48:16] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:48:36] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 108  eval_libero.py:255
+                 INFO     | >> # successes: 12 (11.1%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.83s/it][A100%|██████████| 1/1 [00:21<00:00, 21.83s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1111111111111111                                       
+ 70%|███████   | 108/154 [41:13<16:25, 21.43s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:48:37] INFO     | >>                                   eval_libero.py:131
+                          Task: the proper way to serve this                       
+                          dish is to put the bowl on the plate                     
+                          before bringing it out                                   
+10/07 [13:48:38] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:48:59] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 109  eval_libero.py:255
+                 INFO     | >> # successes: 12 (11.0%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.17s/it][A100%|██████████| 1/1 [00:22<00:00, 22.17s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11009174311926606                                      
+ 71%|███████   | 109/154 [41:36<16:29, 21.99s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:49:01] INFO     | >>                                   eval_libero.py:131
+                          Task: open the middle drawer of the                      
+                          cabinet the one right between the top                    
+                          and bottom ones                                          
+10/07 [13:49:02] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:49:22] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 110  eval_libero.py:255
+                 INFO     | >> # successes: 12 (10.9%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.71s/it][A100%|██████████| 1/1 [00:21<00:00, 21.71s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10909090909090909                                      
+ 71%|███████▏  | 110/154 [41:59<16:18, 22.24s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:49:23] INFO     | >>                                   eval_libero.py:131
+                          Task: for our cheesecake preparation                     
+                          begin by putting the cream cheese in                     
+                          the bowl                                                 
+10/07 [13:49:25] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:49:45] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 111  eval_libero.py:255
+                 INFO     | >> # successes: 12 (10.8%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.65s/it][A100%|██████████| 1/1 [00:21<00:00, 21.65s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10810810810810811                                      
+ 72%|███████▏  | 111/154 [42:22<16:03, 22.40s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:49:46] INFO     | >>                                   eval_libero.py:131
+                          Task: position the bowl atop the                         
+                          cupboard                                                 
+10/07 [13:49:47] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:50:00] INFO     | >> Success: True                     eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 112  eval_libero.py:255
+                 INFO     | >> # successes: 13 (11.6%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:13<00:00, 13.90s/it][A100%|██████████| 1/1 [00:13<00:00, 13.90s/it]
+                 INFO     | >> Current task success rate: 1.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11607142857142858                                      
+ 73%|███████▎  | 112/154 [42:37<14:07, 20.18s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:50:01] INFO     | >>                                   eval_libero.py:131
+                          Task: pull out the center compartment                    
+                          of the cupboard                                          
+10/07 [13:50:02] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:50:23] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 113  eval_libero.py:255
+                 INFO     | >> # successes: 13 (11.5%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.59s/it][A100%|██████████| 1/1 [00:21<00:00, 21.59s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11504424778761062                                      
+ 73%|███████▎  | 113/154 [43:00<14:18, 20.95s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:50:24] INFO     | >>                                   eval_libero.py:131
+                          Task: position the rounded vessel for                    
+                          containing food on the higher storage                    
+                          unit typically found in kitchens                         
+10/07 [13:50:25] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:50:46] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 114  eval_libero.py:255
+                 INFO     | >> # successes: 13 (11.4%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.12s/it][A100%|██████████| 1/1 [00:22<00:00, 22.12s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11403508771929824                                      
+ 74%|███████▍  | 114/154 [43:23<14:25, 21.64s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:50:47] INFO     | >>                                   eval_libero.py:131
+                          Task: make sure the wine bottle ends                     
+                          up on the rack                                           
+10/07 [13:50:48] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:51:09] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 115  eval_libero.py:255
+                 INFO     | >> # successes: 13 (11.3%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.63s/it][A100%|██████████| 1/1 [00:21<00:00, 21.63s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11304347826086956                                      
+ 75%|███████▍  | 115/154 [43:46<14:17, 21.98s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:51:10] INFO     | >>                                   eval_libero.py:131
+                          Task: could you place the wine bottle                    
+                          on the top of the cabinet                                
+10/07 [13:51:11] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:51:32] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 116  eval_libero.py:255
+                 INFO     | >> # successes: 13 (11.2%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.30s/it][A100%|██████████| 1/1 [00:22<00:00, 22.30s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11206896551724138                                      
+ 75%|███████▌  | 116/154 [44:09<14:11, 22.42s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:51:35] INFO     | >>                                   eval_libero.py:131
+                          Task: place the dualtoned beverage                       
+                          holder inside the appliance used for                     
+                          heating food quickly and secure its                      
+                          door                                                     
+10/07 [13:51:38] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:51:57] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 117  eval_libero.py:255
+                 INFO     | >> # successes: 13 (11.1%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.88s/it][A100%|██████████| 1/1 [00:21<00:00, 21.88s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1111111111111111                                       
+ 76%|███████▌  | 117/154 [44:34<14:14, 23.09s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:51:58] INFO     | >>                                   eval_libero.py:131
+                          Task: when youre done with that task                     
+                          your next job is to put both the                         
+                          alphabet soup and the tomato sauce in                    
+                          the basket                                               
+10/07 [13:52:00] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:52:21] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 118  eval_libero.py:255
+                 INFO     | >> # successes: 13 (11.0%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.37s/it][A100%|██████████| 1/1 [00:22<00:00, 22.37s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.11016949152542373                                      
+ 77%|███████▋  | 118/154 [44:58<14:00, 23.34s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:52:23] INFO     | >>                                   eval_libero.py:131
+                          Task: following kitchen protocol all                     
+                          mugs should be stored properly so put                    
+                          the yellow and white one in the                          
+                          microwave and close it                                   
+10/07 [13:52:26] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:52:45] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 119  eval_libero.py:255
+                 INFO     | >> # successes: 13 (10.9%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.72s/it][A100%|██████████| 1/1 [00:21<00:00, 21.72s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1092436974789916                                       
+ 77%|███████▋  | 119/154 [45:22<13:47, 23.65s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:52:47] INFO     | >>                                   eval_libero.py:131
+                          Task: make sure both moka pots are                       
+                          placed on the stove                                      
+10/07 [13:52:48] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:53:08] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 120  eval_libero.py:255
+                 INFO     | >> # successes: 13 (10.8%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.94s/it][A100%|██████████| 1/1 [00:20<00:00, 20.94s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10833333333333334                                      
+ 78%|███████▊  | 120/154 [45:45<13:12, 23.31s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:53:10] INFO     | >>                                   eval_libero.py:131
+                          Task: insert the darkcolored round                       
+                          dish into the lowermost storage                          
+                          section of the kitchen storage unit                      
+                          and secure it by pushing the panel                       
+                          back into position                                       
+10/07 [13:53:11] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:53:31] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 121  eval_libero.py:255
+                 INFO     | >> # successes: 13 (10.7%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.31s/it][A100%|██████████| 1/1 [00:21<00:00, 21.31s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10743801652892562                                      
+ 79%|███████▊  | 121/154 [46:08<12:47, 23.26s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:53:32] INFO     | >>                                   eval_libero.py:131
+                          Task: put both the alphabet soup and                     
+                          the tomato sauce in the basket but                       
+                          leave space for the bread                                
+10/07 [13:53:34] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:53:54] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 122  eval_libero.py:255
+                 INFO     | >> # successes: 13 (10.7%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.02s/it][A100%|██████████| 1/1 [00:22<00:00, 22.02s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10655737704918032                                      
+ 79%|███████▉  | 122/154 [46:31<12:27, 23.35s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:53:57] INFO     | >>                                   eval_libero.py:131
+                          Task: could you kindly place the white                   
+                          mug on the left plate and the yellow                     
+                          and white mug on the right plate                         
+10/07 [13:54:01] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:54:22] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 123  eval_libero.py:255
+                 INFO     | >> # successes: 13 (10.6%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:24<00:00, 24.36s/it][A100%|██████████| 1/1 [00:24<00:00, 24.37s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10569105691056911                                      
+ 80%|███████▉  | 123/154 [46:59<12:41, 24.56s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:54:25] INFO     | >>                                   eval_libero.py:131
+                          Task: make sure the yellow and white                     
+                          mug is inside the closed microwave                       
+10/07 [13:54:27] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:54:46] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 124  eval_libero.py:255
+                 INFO     | >> # successes: 13 (10.5%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.86s/it][A100%|██████████| 1/1 [00:21<00:00, 21.86s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10483870967741936                                      
+ 81%|████████  | 124/154 [47:23<12:17, 24.59s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:54:48] INFO     | >>                                   eval_libero.py:131
+                          Task: place both the liquid mixture                      
+                          featuring letters and the thick red                      
+                          puree inside the woven container                         
+10/07 [13:54:50] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:55:10] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 125  eval_libero.py:255
+                 INFO     | >> # successes: 13 (10.4%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.26s/it][A100%|██████████| 1/1 [00:22<00:00, 22.26s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.104 eval_libero.py:264
+ 81%|████████  | 125/154 [47:47<11:46, 24.35s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:55:12] INFO     | >>                                   eval_libero.py:131
+                          Task: place both the letterthemed                        
+                          broth and the red pasta topping in the                   
+                          woven container                                          
+10/07 [13:55:13] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:55:35] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 126  eval_libero.py:255
+                 INFO     | >> # successes: 13 (10.3%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.83s/it][A100%|██████████| 1/1 [00:22<00:00, 22.83s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10317460317460317                                      
+ 82%|████████▏ | 126/154 [48:12<11:21, 24.35s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:55:37] INFO     | >>                                   eval_libero.py:131
+                          Task: could you place the white mug on                   
+                          the plate and set the chocolate                          
+                          pudding to its right                                     
+10/07 [13:55:39] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:55:59] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 127  eval_libero.py:255
+                 INFO     | >> # successes: 13 (10.2%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.50s/it][A100%|██████████| 1/1 [00:22<00:00, 22.50s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10236220472440945                                      
+ 82%|████████▏ | 127/154 [48:36<10:58, 24.40s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:56:01] INFO     | >>                                   eval_libero.py:131
+                          Task: for our morning routine please                     
+                          turn on the stove and place the moka                     
+                          pot on it                                                
+10/07 [13:56:02] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:56:21] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 128  eval_libero.py:255
+                 INFO     | >> # successes: 13 (10.2%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.22s/it][A100%|██████████| 1/1 [00:20<00:00, 20.22s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.1015625                                                
+ 83%|████████▎ | 128/154 [48:58<10:13, 23.61s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:56:22] INFO     | >>                                   eval_libero.py:131
+                          Task: activate the cooking heat source                   
+                          and place the italian coffee brewer                      
+                          above it                                                 
+10/07 [13:56:24] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:56:43] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 129  eval_libero.py:255
+                 INFO     | >> # successes: 13 (10.1%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.34s/it][A100%|██████████| 1/1 [00:20<00:00, 20.34s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.10077519379844961                                      
+ 84%|████████▍ | 129/154 [49:20<09:37, 23.09s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:56:45] INFO     | >>                                   eval_libero.py:131
+                          Task: lift the collection of printed                     
+                          pages bound together for reading and                     
+                          put it into the rear storage section                     
+                          of the portable utility cart                             
+10/07 [13:56:47] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:57:05] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 130  eval_libero.py:255
+                 INFO     | >> # successes: 13 (10.0%)           eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.18s/it][A100%|██████████| 1/1 [00:20<00:00, 20.18s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.1   eval_libero.py:264
+ 84%|████████▍ | 130/154 [49:42<09:09, 22.89s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:57:08] INFO     | >>                                   eval_libero.py:131
+                          Task: place the yellow and white cup                     
+                          inside the microwave and shut the door                   
+10/07 [13:57:11] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:57:30] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 131  eval_libero.py:255
+                 INFO     | >> # successes: 13 (9.9%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.22s/it][A100%|██████████| 1/1 [00:22<00:00, 22.22s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09923664122137404                                      
+ 85%|████████▌ | 131/154 [50:07<09:01, 23.52s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:57:32] INFO     | >>                                   eval_libero.py:131
+                          Task: activate the cooking appliance                     
+                          and place the italian coffee maker on                    
+                          the heating area                                         
+10/07 [13:57:33] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:57:52] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 132  eval_libero.py:255
+                 INFO     | >> # successes: 13 (9.8%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.60s/it][A100%|██████████| 1/1 [00:20<00:00, 20.60s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09848484848484848                                      
+ 86%|████████▌ | 132/154 [50:29<08:28, 23.12s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:57:55] INFO     | >>                                   eval_libero.py:131
+                          Task: place the ceramic container with                   
+                          dualcolors yellow and white inside the                   
+                          appliance used for heating food                          
+                          quickly and shut the door of this                        
+                          appliance                                                
+10/07 [13:57:58] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:58:17] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 133  eval_libero.py:255
+                 INFO     | >> # successes: 13 (9.8%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.88s/it][A100%|██████████| 1/1 [00:21<00:00, 21.88s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09774436090225563                                      
+ 86%|████████▋ | 133/154 [50:54<08:15, 23.58s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:58:19] INFO     | >>                                   eval_libero.py:131
+                          Task: could you ensure both moka pots                    
+                          are on the stove                                         
+10/07 [13:58:20] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:58:39] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 134  eval_libero.py:255
+                 INFO     | >> # successes: 13 (9.7%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.41s/it][A100%|██████████| 1/1 [00:20<00:00, 20.41s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09701492537313433                                      
+ 87%|████████▋ | 134/154 [51:16<07:41, 23.10s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:58:40] INFO     | >>                                   eval_libero.py:131
+                          Task: place both the can of                              
+                          lettershaped noodle dish and the                         
+                          packaging containing the dairy spread                    
+                          in the woven container                                   
+10/07 [13:58:42] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:59:02] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 135  eval_libero.py:255
+                 INFO     | >> # successes: 13 (9.6%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.40s/it][A100%|██████████| 1/1 [00:21<00:00, 21.40s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.0962962962962963                                       
+ 88%|████████▊ | 135/154 [51:39<07:16, 23.00s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:59:04] INFO     | >>                                   eval_libero.py:131
+                          Task: place the darkcolored dish used                    
+                          for serving or preparing food into the                   
+                          lowest storage compartment of the                        
+                          storage unit with doors and then                         
+                          secure the entryway to this                              
+                          compartment                                              
+10/07 [13:59:06] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:59:25] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 136  eval_libero.py:255
+                 INFO     | >> # successes: 13 (9.6%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.57s/it][A100%|██████████| 1/1 [00:21<00:00, 21.57s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09558823529411764                                      
+ 88%|████████▊ | 136/154 [52:02<06:56, 23.12s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:59:27] INFO     | >>                                   eval_libero.py:131
+                          Task: put both the alphabet soup and                     
+                          the tomato sauce in the basket but                       
+                          dont touch the pasta boxes nearby                        
+10/07 [13:59:28] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [13:59:50] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 137  eval_libero.py:255
+                 INFO     | >> # successes: 13 (9.5%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.97s/it][A100%|██████████| 1/1 [00:22<00:00, 22.97s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.0948905109489051                                       
+ 89%|████████▉ | 137/154 [52:27<06:40, 23.54s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [13:59:51] INFO     | >>                                   eval_libero.py:131
+                          Task: could you place both moka pots                     
+                          on the stove                                             
+10/07 [13:59:53] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:00:12] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 138  eval_libero.py:255
+                 INFO     | >> # successes: 13 (9.4%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 21.00s/it][A100%|██████████| 1/1 [00:21<00:00, 21.00s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09420289855072464                                      
+ 90%|████████▉ | 138/154 [52:49<06:12, 23.25s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:00:14] INFO     | >>                                   eval_libero.py:131
+                          Task: switch on the burner and place                     
+                          the espresso maker atop it                               
+10/07 [14:00:15] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:00:35] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 139  eval_libero.py:255
+                 INFO     | >> # successes: 13 (9.4%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.04s/it][A100%|██████████| 1/1 [00:21<00:00, 21.04s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09352517985611511                                      
+ 90%|█████████ | 139/154 [53:12<05:45, 23.06s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:00:37] INFO     | >>                                   eval_libero.py:131
+                          Task: place the dark bowl into the                       
+                          lower drawer of the cupboard and shut                    
+                          it                                                       
+10/07 [14:00:39] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:00:58] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 140  eval_libero.py:255
+                 INFO     | >> # successes: 13 (9.3%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.37s/it][A100%|██████████| 1/1 [00:21<00:00, 21.37s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09285714285714286                                      
+ 91%|█████████ | 140/154 [53:35<05:23, 23.11s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:01:00] INFO     | >>                                   eval_libero.py:131
+                          Task: on this lovely afternoon could                     
+                          you please put both the alphabet soup                    
+                          and the tomato sauce in the basket                       
+10/07 [14:01:01] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:01:22] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 141  eval_libero.py:255
+                 INFO     | >> # successes: 13 (9.2%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.49s/it][A100%|██████████| 1/1 [00:22<00:00, 22.50s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09219858156028368                                      
+ 92%|█████████▏| 141/154 [53:59<05:04, 23.39s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:01:24] INFO     | >>                                   eval_libero.py:131
+                          Task: could you set the white mug on                     
+                          the plate and place the chocolate                        
+                          pudding to the right of it                               
+10/07 [14:01:27] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:01:46] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 142  eval_libero.py:255
+                 INFO     | >> # successes: 13 (9.2%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.05s/it][A100%|██████████| 1/1 [00:22<00:00, 22.05s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09154929577464789                                      
+ 92%|█████████▏| 142/154 [54:23<04:43, 23.64s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:01:49] INFO     | >>                                   eval_libero.py:131
+                          Task: place the lightcolored drinking                    
+                          container on the flat ceramic dish and                   
+                          position the sweet cocoabased dessert                    
+                          to the starboard side of the flat                        
+                          ceramic dish                                             
+10/07 [14:01:51] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:02:10] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 143  eval_libero.py:255
+                 INFO     | >> # successes: 13 (9.1%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.75s/it][A100%|██████████| 1/1 [00:21<00:00, 21.75s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09090909090909091                                      
+ 93%|█████████▎| 143/154 [54:47<04:21, 23.74s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:02:13] INFO     | >>                                   eval_libero.py:131
+                          Task: could you arrange the mugs put                     
+                          the white one on the left plate and                      
+                          the yellow and white one on the right                    
+                          plate                                                    
+10/07 [14:02:17] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:02:37] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 144  eval_libero.py:255
+                 INFO     | >> # successes: 13 (9.0%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:24<00:00, 24.10s/it][A100%|██████████| 1/1 [00:24<00:00, 24.10s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.09027777777777778                                      
+ 94%|█████████▎| 144/154 [55:14<04:07, 24.76s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:02:39] INFO     | >>                                   eval_libero.py:131
+                          Task: the stove is free now so please                    
+                          put both moka pots on it                                 
+10/07 [14:02:41] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:03:01] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 145  eval_libero.py:255
+                 INFO     | >> # successes: 13 (9.0%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.49s/it][A100%|██████████| 1/1 [00:21<00:00, 21.49s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.0896551724137931                                       
+ 94%|█████████▍| 145/154 [55:38<03:38, 24.25s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:03:03] INFO     | >>                                   eval_libero.py:131
+                          Task: as shown in the recipe book                        
+                          place white mug on plate chocolate                       
+                          pudding to right                                         
+10/07 [14:03:05] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:03:25] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 146  eval_libero.py:255
+                 INFO     | >> # successes: 13 (8.9%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.91s/it][A100%|██████████| 1/1 [00:21<00:00, 21.91s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.08904109589041095                                      
+ 95%|█████████▍| 146/154 [56:02<03:13, 24.22s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:03:26] INFO     | >>                                   eval_libero.py:131
+                          Task: place both traditional italian                     
+                          coffee makers on the cooking appliance                   
+10/07 [14:03:28] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:03:47] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 147  eval_libero.py:255
+                 INFO     | >> # successes: 13 (8.8%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.17s/it][A100%|██████████| 1/1 [00:21<00:00, 21.17s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.08843537414965986                                      
+ 95%|█████████▌| 147/154 [56:24<02:46, 23.77s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:03:49] INFO     | >>                                   eval_libero.py:131
+                          Task: place both the canister of soup                    
+                          labeled with letters and the container                   
+                          of spreadable dairy product in the                       
+                          woven holder                                             
+10/07 [14:03:50] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:04:09] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 148  eval_libero.py:255
+                 INFO     | >> # successes: 13 (8.8%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.43s/it][A100%|██████████| 1/1 [00:20<00:00, 20.43s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.08783783783783784                                      
+ 96%|█████████▌| 148/154 [56:46<02:19, 23.17s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:04:11] INFO     | >>                                   eval_libero.py:131
+                          Task: place both the soup containing                     
+                          lettershaped pasta and the red                           
+                          vegetablebased condiment into the                        
+                          woven container                                          
+10/07 [14:04:12] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:04:33] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 149  eval_libero.py:255
+                 INFO     | >> # successes: 13 (8.7%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:22<00:00, 22.46s/it][A100%|██████████| 1/1 [00:22<00:00, 22.46s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.087248322147651                                        
+ 97%|█████████▋| 149/154 [57:10<01:57, 23.42s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:04:35] INFO     | >>                                   eval_libero.py:131
+                          Task: could you please put the book in                   
+                          the caddys back compartment                              
+10/07 [14:04:38] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:04:56] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 150  eval_libero.py:255
+                 INFO     | >> # successes: 13 (8.7%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:20<00:00, 20.50s/it][A100%|██████████| 1/1 [00:20<00:00, 20.50s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.08666666666666667                                      
+ 97%|█████████▋| 150/154 [57:33<01:32, 23.16s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:04:57] INFO     | >>                                   eval_libero.py:131
+                          Task: turn on the stove and set the                      
+                          moka pot on it but dont forget to add                    
+                          water first                                              
+10/07 [14:04:59] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:05:19] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 151  eval_libero.py:255
+                 INFO     | >> # successes: 13 (8.6%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.35s/it][A100%|██████████| 1/1 [00:21<00:00, 21.35s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.08609271523178808                                      
+ 98%|█████████▊| 151/154 [57:56<01:09, 23.08s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:05:22] INFO     | >>                                   eval_libero.py:131
+                          Task: can you place the white mug on                     
+                          the left plate and the yellow and                        
+                          white mug on the right plate                             
+10/07 [14:05:25] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:05:46] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 152  eval_libero.py:255
+                 INFO     | >> # successes: 13 (8.6%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:24<00:00, 24.30s/it][A100%|██████████| 1/1 [00:24<00:00, 24.30s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.08552631578947369                                      
+ 99%|█████████▊| 152/154 [58:23<00:48, 24.38s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:05:47] INFO     | >>                                   eval_libero.py:131
+                          Task: insert both the letter stew and                    
+                          the cheese spread container into the                     
+                          hamper                                                   
+10/07 [14:05:49] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:06:09] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 153  eval_libero.py:255
+                 INFO     | >> # successes: 13 (8.5%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.28s/it][A100%|██████████| 1/1 [00:21<00:00, 21.28s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.08496732026143791                                      
+ 99%|█████████▉| 153/154 [58:46<00:23, 23.85s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][A10/07 [14:06:11] INFO     | >>                                   eval_libero.py:131
+                          Task: place the darkcolored bowl into                    
+                          the lower drawer of the cupboard and                     
+                          shut it                                                  
+10/07 [14:06:12] INFO     | >> Starting episode 1...             eval_libero.py:146
+10/07 [14:06:32] INFO     | >> Success: False                    eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 154  eval_libero.py:255
+                 INFO     | >> # successes: 13 (8.4%)            eval_libero.py:256
+
+100%|██████████| 1/1 [00:21<00:00, 21.36s/it][A100%|██████████| 1/1 [00:21<00:00, 21.36s/it]
+                 INFO     | >> Current task success rate: 0.0    eval_libero.py:261
+                 INFO     | >> Current total success rate:       eval_libero.py:264
+                          0.08441558441558442                                      
+100%|██████████| 154/154 [59:09<00:00, 23.67s/it]100%|██████████| 154/154 [59:09<00:00, 23.05s/it]
+                 INFO     | >> Total success rate:               eval_libero.py:268
+                          0.08441558441558442                                      
+                 INFO     | >> Total episodes: 154               eval_libero.py:271
+Exception ignored in: <function MjRenderContext.__del__ at 0x7252455d0e50>
+Traceback (most recent call last):
+  File "/workspace/miniconda3/envs/libero_plus/lib/python3.10/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+    self.gl_ctx.free()
+  File "/workspace/miniconda3/envs/libero_plus/lib/python3.10/site-packages/robosuite/renderers/context/egl_context.py", line 149, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE, EGL.EGL_NO_SURFACE, EGL.EGL_NO_CONTEXT)
+  File "/workspace/miniconda3/envs/libero_plus/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x725157d86d40>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x72524fd357c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x72524fd357c0>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x72524fd35dc0>,
+	),
+	result = 0
+)
+Exception ignored in: <function EGLGLContext.__del__ at 0x7252455d0ca0>
+Traceback (most recent call last):
+  File "/workspace/miniconda3/envs/libero_plus/lib/python3.10/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+    self.free()
+  File "/workspace/miniconda3/envs/libero_plus/lib/python3.10/site-packages/robosuite/renderers/context/egl_context.py", line 149, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE, EGL.EGL_NO_SURFACE, EGL.EGL_NO_CONTEXT)
+  File "/workspace/miniconda3/envs/libero_plus/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x725157d86d40>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x72524fd357c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x72524fd357c0>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x72524fd35dc0>,
+	),
+	result = 0
+)
