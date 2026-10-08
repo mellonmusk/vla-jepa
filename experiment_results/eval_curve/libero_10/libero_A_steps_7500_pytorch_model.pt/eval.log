@@ -1,0 +1,482 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+10/08 [08:24:48] INFO     | >> Arguments: {                                                                                            eval_libero.py:77
+                              "host": "127.0.0.1",                                                                                                      
+                              "port": 15083,                                                                                                            
+                              "task_suite_name": "libero_10",                                                                                           
+                              "num_steps_wait": 10,                                                                                                     
+                              "num_trials_per_task": 5,                                                                                                 
+                              "task_stride": 1,                                                                                                         
+                              "category_value": "Background Textures",                                                                                  
+                              "video_out_path": "results/libero_10/libero_A_steps_7500_pytorch_model.pt",                                               
+                              "seed": 7,                                                                                                                
+                              "pretrained_path": "/workspace/runs/libero_A/checkpoints/steps_7500_pytorch_model.pt",                                    
+                              "post_process_action": true,                                                                                              
+                              "with_state": "true",                                                                                                     
+                              "job_name": "test"                                                                                                        
+                          }                                                                                                                             
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                 INFO     | >> Task suite: libero_10                                                                                   eval_libero.py:89
+                 INFO     | >> Waiting for server at ws://127.0.0.1:15083...                                               websocket_policy_client.py:34
+*** policy_setup: franka, unnorm_key: None ***
+                 INFO     | >> [*] Loading from local checkpoint path `/workspace/runs/libero_A/checkpoints/steps_7500_pytorch_model.pt`    tools.py:169
+                 INFO     | >> [*] Loading from local checkpoint path `/workspace/runs/libero_A/checkpoints/steps_7500_pytorch_model.pt`    tools.py:169
+  0%|          | 0/10 [00:00<?, ?it/s][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+/workspace/LIBERO/libero/libero/benchmark/__init__.py:164: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_states = torch.load(init_states_path)
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [08:24:53] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both the alphabet soup and the tomato sauce in the basket                                                           
+10/08 [08:24:54] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [08:25:22] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 1                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 20%|██        | 1/5 [00:28<01:55, 28.86s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both the alphabet soup and the tomato sauce in the basket                                                           
+10/08 [08:25:23] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [08:25:55] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 2                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 40%|████      | 2/5 [01:01<01:34, 31.37s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both the alphabet soup and the tomato sauce in the basket                                                           
+10/08 [08:25:56] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [08:26:27] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 3                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 60%|██████    | 3/5 [01:34<01:03, 31.94s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both the alphabet soup and the tomato sauce in the basket                                                           
+10/08 [08:26:29] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [08:26:55] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 4                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 80%|████████  | 4/5 [02:02<00:30, 30.30s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both the alphabet soup and the tomato sauce in the basket                                                           
+10/08 [08:26:57] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [08:27:24] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 5                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+100%|██████████| 5/5 [02:31<00:00, 29.80s/it][A100%|██████████| 5/5 [02:31<00:00, 30.26s/it]
+                 INFO     | >> Current task success rate: 0.0                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0                                                                        eval_libero.py:264
+ 10%|█         | 1/10 [02:36<23:25, 156.19s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+/workspace/LIBERO/libero/libero/benchmark/__init__.py:164: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_states = torch.load(init_states_path)
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [08:27:25] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both the cream cheese box and the butter in the basket                                                              
+10/08 [08:27:27] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [08:27:52] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 6                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 20%|██        | 1/5 [00:26<01:45, 26.32s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both the cream cheese box and the butter in the basket                                                              
+10/08 [08:27:53] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [08:28:19] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 7                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 40%|████      | 2/5 [00:53<01:20, 26.95s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both the cream cheese box and the butter in the basket                                                              
+10/08 [08:28:21] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [08:28:46] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 8                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 60%|██████    | 3/5 [01:20<00:53, 26.77s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both the cream cheese box and the butter in the basket                                                              
+10/08 [08:28:47] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [08:29:12] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 9                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 80%|████████  | 4/5 [01:46<00:26, 26.58s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both the cream cheese box and the butter in the basket                                                              
+10/08 [08:29:14] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [08:29:40] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 10                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+100%|██████████| 5/5 [02:14<00:00, 27.23s/it][A100%|██████████| 5/5 [02:14<00:00, 26.99s/it]
+                 INFO     | >> Current task success rate: 0.0                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0                                                                        eval_libero.py:264
+ 20%|██        | 2/10 [04:52<19:15, 144.46s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [08:29:42] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: turn on the stove and put the moka pot on it                                                                            
+10/08 [08:29:43] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [08:30:07] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 11                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 20%|██        | 1/5 [00:24<01:39, 24.97s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: turn on the stove and put the moka pot on it                                                                            
+10/08 [08:30:08] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [08:30:35] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 12                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 40%|████      | 2/5 [00:52<01:19, 26.38s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: turn on the stove and put the moka pot on it                                                                            
+                 INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [08:31:01] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 13                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 60%|██████    | 3/5 [01:18<00:52, 26.47s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: turn on the stove and put the moka pot on it                                                                            
+10/08 [08:31:02] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [08:31:26] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 14                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 80%|████████  | 4/5 [01:43<00:25, 25.89s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: turn on the stove and put the moka pot on it                                                                            
+10/08 [08:31:27] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [08:31:55] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 15                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+100%|██████████| 5/5 [02:13<00:00, 27.05s/it][A100%|██████████| 5/5 [02:13<00:00, 26.61s/it]
+                 INFO     | >> Current task success rate: 0.0                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0                                                                        eval_libero.py:264
+ 30%|███       | 3/10 [07:07<16:20, 140.09s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [08:31:57] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the black bowl in the bottom drawer of the cabinet and close it                                                     
+10/08 [08:31:58] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [08:32:25] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 16                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 20%|██        | 1/5 [00:28<01:53, 28.25s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the black bowl in the bottom drawer of the cabinet and close it                                                     
+10/08 [08:32:27] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [08:32:53] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 17                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 40%|████      | 2/5 [00:56<01:24, 28.22s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the black bowl in the bottom drawer of the cabinet and close it                                                     
+10/08 [08:32:55] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [08:33:18] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 18                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 60%|██████    | 3/5 [01:21<00:53, 26.78s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the black bowl in the bottom drawer of the cabinet and close it                                                     
+10/08 [08:33:20] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [08:33:46] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 19                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 80%|████████  | 4/5 [01:49<00:27, 27.16s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the black bowl in the bottom drawer of the cabinet and close it                                                     
+10/08 [08:33:48] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [08:34:17] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 20                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+100%|██████████| 5/5 [02:19<00:00, 28.40s/it][A100%|██████████| 5/5 [02:19<00:00, 27.97s/it]
+                 INFO     | >> Current task success rate: 0.0                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0                                                                        eval_libero.py:264
+ 40%|████      | 4/10 [09:28<14:03, 140.57s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [08:34:20] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the white mug on the left plate and put the yellow and white mug on the right plate                                 
+10/08 [08:34:24] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [08:34:52] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 21                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 20%|██        | 1/5 [00:31<02:07, 31.79s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the white mug on the left plate and put the yellow and white mug on the right plate                                 
+10/08 [08:34:56] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [08:35:23] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 22                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 40%|████      | 2/5 [01:02<01:33, 31.29s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the white mug on the left plate and put the yellow and white mug on the right plate                                 
+10/08 [08:35:27] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [08:35:53] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 23                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 60%|██████    | 3/5 [01:32<01:01, 30.60s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the white mug on the left plate and put the yellow and white mug on the right plate                                 
+10/08 [08:35:56] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [08:36:24] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 24                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 80%|████████  | 4/5 [02:03<00:30, 30.85s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the white mug on the left plate and put the yellow and white mug on the right plate                                 
+10/08 [08:36:28] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [08:36:56] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 25                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+100%|██████████| 5/5 [02:36<00:00, 31.44s/it][A100%|██████████| 5/5 [02:36<00:00, 31.25s/it]
+                 INFO     | >> Current task success rate: 0.0                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0                                                                        eval_libero.py:264
+ 50%|█████     | 5/10 [12:08<12:17, 147.52s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [08:36:59] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the book and place it in the back compartment of the caddy                                                      
+10/08 [08:37:01] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [08:37:21] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 26                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 20%|██        | 1/5 [00:22<01:31, 22.84s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the book and place it in the back compartment of the caddy                                                      
+10/08 [08:37:24] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [08:37:47] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 27                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 40%|████      | 2/5 [00:48<01:13, 24.60s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the book and place it in the back compartment of the caddy                                                      
+10/08 [08:37:50] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [08:38:12] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 28                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 60%|██████    | 3/5 [01:13<00:49, 24.65s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the book and place it in the back compartment of the caddy                                                      
+10/08 [08:38:14] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [08:38:38] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 29                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 80%|████████  | 4/5 [01:39<00:25, 25.20s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the book and place it in the back compartment of the caddy                                                      
+10/08 [08:38:40] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [08:39:05] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 30                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+100%|██████████| 5/5 [02:06<00:00, 25.87s/it][A100%|██████████| 5/5 [02:06<00:00, 25.30s/it]
+                 INFO     | >> Current task success rate: 0.0                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0                                                                        eval_libero.py:264
+ 60%|██████    | 6/10 [14:17<09:24, 141.12s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [08:39:08] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the white mug on the plate and put the chocolate pudding to the right of the plate                                  
+10/08 [08:39:10] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [08:39:36] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 31                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 20%|██        | 1/5 [00:27<01:51, 27.97s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the white mug on the plate and put the chocolate pudding to the right of the plate                                  
+10/08 [08:39:38] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [08:40:01] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 32                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 40%|████      | 2/5 [00:53<01:18, 26.28s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the white mug on the plate and put the chocolate pudding to the right of the plate                                  
+10/08 [08:40:04] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [08:40:31] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 33                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 60%|██████    | 3/5 [01:23<00:56, 28.20s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the white mug on the plate and put the chocolate pudding to the right of the plate                                  
+10/08 [08:40:34] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [08:41:00] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 34                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 80%|████████  | 4/5 [01:52<00:28, 28.60s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the white mug on the plate and put the chocolate pudding to the right of the plate                                  
+10/08 [08:41:03] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [08:41:30] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 35                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+100%|██████████| 5/5 [02:21<00:00, 28.81s/it][A100%|██████████| 5/5 [02:21<00:00, 28.39s/it]
+                 INFO     | >> Current task success rate: 0.0                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0                                                                        eval_libero.py:264
+ 70%|███████   | 7/10 [16:41<07:06, 142.23s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [08:41:31] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both the alphabet soup and the cream cheese box in the basket                                                       
+10/08 [08:41:32] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [08:41:58] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 36                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 20%|██        | 1/5 [00:26<01:47, 26.99s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both the alphabet soup and the cream cheese box in the basket                                                       
+10/08 [08:41:59] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [08:42:25] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 37                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 40%|████      | 2/5 [00:53<01:20, 26.99s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both the alphabet soup and the cream cheese box in the basket                                                       
+10/08 [08:42:26] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [08:42:52] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 38                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 60%|██████    | 3/5 [01:21<00:54, 27.02s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both the alphabet soup and the cream cheese box in the basket                                                       
+10/08 [08:42:53] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [08:43:18] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 39                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 80%|████████  | 4/5 [01:47<00:26, 26.67s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both the alphabet soup and the cream cheese box in the basket                                                       
+10/08 [08:43:19] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [08:43:45] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 40                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+100%|██████████| 5/5 [02:13<00:00, 26.66s/it][A100%|██████████| 5/5 [02:13<00:00, 26.76s/it]
+                 INFO     | >> Current task success rate: 0.0                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0                                                                        eval_libero.py:264
+ 80%|████████  | 8/10 [18:56<04:39, 139.91s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both moka pots on the stove                                                                                         
+10/08 [08:43:46] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [08:44:09] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 41                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 20%|██        | 1/5 [00:23<01:35, 23.82s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both moka pots on the stove                                                                                         
+10/08 [08:44:10] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [08:44:35] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 42                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 40%|████      | 2/5 [00:49<01:14, 24.75s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both moka pots on the stove                                                                                         
+10/08 [08:44:36] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [08:45:00] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 43                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 60%|██████    | 3/5 [01:14<00:50, 25.09s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both moka pots on the stove                                                                                         
+10/08 [08:45:01] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [08:45:24] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 44                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 80%|████████  | 4/5 [01:38<00:24, 24.55s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put both moka pots on the stove                                                                                         
+10/08 [08:45:25] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [08:45:48] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 45                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+100%|██████████| 5/5 [02:02<00:00, 24.45s/it][A100%|██████████| 5/5 [02:02<00:00, 24.54s/it]
+                 INFO     | >> Current task success rate: 0.0                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0                                                                        eval_libero.py:264
+ 90%|█████████ | 9/10 [21:00<02:14, 134.78s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [08:45:50] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the yellow and white mug in the microwave and close it                                                              
+10/08 [08:45:52] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [08:46:17] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 46                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 20%|██        | 1/5 [00:27<01:50, 27.50s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the yellow and white mug in the microwave and close it                                                              
+10/08 [08:46:19] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [08:46:44] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 47                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 40%|████      | 2/5 [00:53<01:20, 26.81s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the yellow and white mug in the microwave and close it                                                              
+10/08 [08:46:46] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [08:47:12] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 48                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 60%|██████    | 3/5 [01:22<00:54, 27.49s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the yellow and white mug in the microwave and close it                                                              
+10/08 [08:47:14] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [08:47:38] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 49                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+ 80%|████████  | 4/5 [01:48<00:26, 26.90s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: put the yellow and white mug in the microwave and close it                                                              
+10/08 [08:47:40] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [08:48:05] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 50                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 0 (0.0%)                                                                                  eval_libero.py:256
+
+100%|██████████| 5/5 [02:15<00:00, 27.07s/it][A100%|██████████| 5/5 [02:15<00:00, 27.10s/it]
+                 INFO     | >> Current task success rate: 0.0                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.0                                                                        eval_libero.py:264
+100%|██████████| 10/10 [23:17<00:00, 135.58s/it]100%|██████████| 10/10 [23:17<00:00, 139.75s/it]
+                 INFO     | >> Total success rate: 0.0                                                                                eval_libero.py:268
+                 INFO     | >> Total episodes: 50                                                                                     eval_libero.py:271
+Exception ignored in: <function MjRenderContext.__del__ at 0x72bcbaf492d0>
+Traceback (most recent call last):
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+    self.gl_ctx.free()
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/renderers/context/egl_context.py", line 149, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE, EGL.EGL_NO_SURFACE, EGL.EGL_NO_CONTEXT)
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x72bc7941df40>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x72bcbd9a04c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x72bcbd9a04c0>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x72bcbd9a09c0>,
+	),
+	result = 0
+)
+Exception ignored in: <function EGLGLContext.__del__ at 0x72bcbaf49120>
+Traceback (most recent call last):
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+    self.free()
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/renderers/context/egl_context.py", line 149, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE, EGL.EGL_NO_SURFACE, EGL.EGL_NO_CONTEXT)
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x72bc7941df40>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x72bcbd9a04c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x72bcbd9a04c0>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x72bcbd9a09c0>,
+	),
+	result = 0
+)

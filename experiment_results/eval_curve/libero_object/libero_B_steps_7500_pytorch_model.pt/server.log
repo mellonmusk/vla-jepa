@@ -1,0 +1,12 @@
+/workspace/miniconda3/envs/VLA_JEPA/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+INFO:starVLA.model.framework.share_tools:[*] Loading from local checkpoint path `/workspace/runs/libero_B/checkpoints/steps_7500_pytorch_model.pt`
+INFO:starVLA.model.framework.VLA_JEPA:[*] Model embedding size: 151936 ;tokenizer.vocab_size: 151698
+INFO:starVLA.model.framework.VLA_JEPA:[*] LoRA injected: r=16, 112 layers, 6.423M trainable LoRA parameters
+Total number of DiT parameters:  150740992
+INFO:root:Creating server (host: 0a5541ea5e01, ip: 172.26.0.2)
+INFO:root:server running ...
+INFO:websockets.server:server listening on 0.0.0.0:15083
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 51534) opened
+INFO:root:Connection from ('127.0.0.1', 51534) closed

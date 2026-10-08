@@ -1,0 +1,482 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+10/08 [09:45:33] INFO     | >> Arguments: {                                                                                            eval_libero.py:77
+                              "host": "127.0.0.1",                                                                                                      
+                              "port": 15083,                                                                                                            
+                              "task_suite_name": "libero_object",                                                                                       
+                              "num_steps_wait": 10,                                                                                                     
+                              "num_trials_per_task": 5,                                                                                                 
+                              "task_stride": 1,                                                                                                         
+                              "category_value": "Background Textures",                                                                                  
+                              "video_out_path": "results/libero_object/libero_B_steps_15000_pytorch_model.pt",                                          
+                              "seed": 7,                                                                                                                
+                              "pretrained_path": "/workspace/runs/libero_B/checkpoints/steps_15000_pytorch_model.pt",                                   
+                              "post_process_action": true,                                                                                              
+                              "with_state": "true",                                                                                                     
+                              "job_name": "test"                                                                                                        
+                          }                                                                                                                             
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                 INFO     | >> Task suite: libero_object                                                                               eval_libero.py:89
+                 INFO     | >> Waiting for server at ws://127.0.0.1:15083...                                               websocket_policy_client.py:34
+*** policy_setup: franka, unnorm_key: None ***
+                 INFO     | >> [*] Loading from local checkpoint path `/workspace/runs/libero_B/checkpoints/steps_15000_pytorch_model.pt`   tools.py:169
+                 INFO     | >> [*] Loading from local checkpoint path `/workspace/runs/libero_B/checkpoints/steps_15000_pytorch_model.pt`   tools.py:169
+  0%|          | 0/10 [00:00<?, ?it/s][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+/workspace/LIBERO/libero/libero/benchmark/__init__.py:164: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_states = torch.load(init_states_path)
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [09:45:37] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the alphabet soup and place it in the basket                                                                    
+10/08 [09:45:38] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [09:45:47] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 1                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 1 (100.0%)                                                                                eval_libero.py:256
+
+ 20%|██        | 1/5 [00:10<00:40, 10.16s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the alphabet soup and place it in the basket                                                                    
+10/08 [09:45:48] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [09:45:55] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 2                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 2 (100.0%)                                                                                eval_libero.py:256
+
+ 40%|████      | 2/5 [00:17<00:25,  8.65s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the alphabet soup and place it in the basket                                                                    
+10/08 [09:45:56] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [09:46:05] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 3                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 3 (100.0%)                                                                                eval_libero.py:256
+
+ 60%|██████    | 3/5 [00:28<00:19,  9.63s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the alphabet soup and place it in the basket                                                                    
+10/08 [09:46:07] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [09:46:15] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 4                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 4 (100.0%)                                                                                eval_libero.py:256
+
+ 80%|████████  | 4/5 [00:37<00:09,  9.51s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the alphabet soup and place it in the basket                                                                    
+10/08 [09:46:16] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [09:46:25] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 5                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 5 (100.0%)                                                                                eval_libero.py:256
+
+100%|██████████| 5/5 [00:48<00:00,  9.74s/it][A100%|██████████| 5/5 [00:48<00:00,  9.60s/it]
+                 INFO     | >> Current task success rate: 1.0                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 1.0                                                                        eval_libero.py:264
+ 10%|█         | 1/10 [00:52<07:49, 52.21s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+/workspace/LIBERO/libero/libero/benchmark/__init__.py:164: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_states = torch.load(init_states_path)
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [09:46:26] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the cream cheese and place it in the basket                                                                     
+10/08 [09:46:27] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [09:46:36] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 6                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 6 (100.0%)                                                                                eval_libero.py:256
+
+ 20%|██        | 1/5 [00:09<00:37,  9.50s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the cream cheese and place it in the basket                                                                     
+10/08 [09:46:37] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [09:46:43] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 7                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 7 (100.0%)                                                                                eval_libero.py:256
+
+ 40%|████      | 2/5 [00:17<00:25,  8.40s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the cream cheese and place it in the basket                                                                     
+10/08 [09:46:44] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [09:46:50] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 8                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 8 (100.0%)                                                                                eval_libero.py:256
+
+ 60%|██████    | 3/5 [00:24<00:15,  7.79s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the cream cheese and place it in the basket                                                                     
+10/08 [09:46:51] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [09:47:05] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 9                                                                         eval_libero.py:255
+                 INFO     | >> # successes: 8 (88.9%)                                                                                 eval_libero.py:256
+
+ 80%|████████  | 4/5 [00:39<00:10, 10.71s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the cream cheese and place it in the basket                                                                     
+10/08 [09:47:07] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [09:47:14] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 10                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 9 (90.0%)                                                                                 eval_libero.py:256
+
+100%|██████████| 5/5 [00:47<00:00,  9.76s/it][A100%|██████████| 5/5 [00:47<00:00,  9.49s/it]
+                 INFO     | >> Current task success rate: 0.8                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.9                                                                        eval_libero.py:264
+ 20%|██        | 2/10 [01:40<06:40, 50.09s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [09:47:15] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the salad dressing and place it in the basket                                                                   
+10/08 [09:47:16] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [09:47:22] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 11                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 10 (90.9%)                                                                                eval_libero.py:256
+
+ 20%|██        | 1/5 [00:07<00:29,  7.43s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the salad dressing and place it in the basket                                                                   
+10/08 [09:47:23] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [09:47:31] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 12                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 11 (91.7%)                                                                                eval_libero.py:256
+
+ 40%|████      | 2/5 [00:16<00:24,  8.15s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the salad dressing and place it in the basket                                                                   
+10/08 [09:47:32] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [09:47:37] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 13                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 12 (92.3%)                                                                                eval_libero.py:256
+
+ 60%|██████    | 3/5 [00:22<00:14,  7.43s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the salad dressing and place it in the basket                                                                   
+10/08 [09:47:38] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [09:47:45] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 14                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 13 (92.9%)                                                                                eval_libero.py:256
+
+ 80%|████████  | 4/5 [00:30<00:07,  7.69s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the salad dressing and place it in the basket                                                                   
+10/08 [09:47:47] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [09:47:52] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 15                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 14 (93.3%)                                                                                eval_libero.py:256
+
+100%|██████████| 5/5 [00:37<00:00,  7.31s/it][A100%|██████████| 5/5 [00:37<00:00,  7.47s/it]
+                 INFO     | >> Current task success rate: 1.0                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.9333333333333333                                                         eval_libero.py:264
+ 30%|███       | 3/10 [02:19<05:13, 44.79s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [09:47:53] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the bbq sauce and place it in the basket                                                                        
+10/08 [09:47:54] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [09:48:00] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 16                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 15 (93.8%)                                                                                eval_libero.py:256
+
+ 20%|██        | 1/5 [00:06<00:27,  6.99s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the bbq sauce and place it in the basket                                                                        
+10/08 [09:48:02] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [09:48:07] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 17                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 16 (94.1%)                                                                                eval_libero.py:256
+
+ 40%|████      | 2/5 [00:13<00:19,  6.65s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the bbq sauce and place it in the basket                                                                        
+10/08 [09:48:08] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [09:48:15] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 18                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 17 (94.4%)                                                                                eval_libero.py:256
+
+ 60%|██████    | 3/5 [00:21<00:14,  7.23s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the bbq sauce and place it in the basket                                                                        
+10/08 [09:48:16] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [09:48:21] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 19                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 18 (94.7%)                                                                                eval_libero.py:256
+
+ 80%|████████  | 4/5 [00:28<00:07,  7.09s/it][A10/08 [09:48:22] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the bbq sauce and place it in the basket                                                                        
+10/08 [09:48:23] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [09:48:36] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 20                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 18 (90.0%)                                                                                eval_libero.py:256
+
+100%|██████████| 5/5 [00:42<00:00,  9.64s/it][A100%|██████████| 5/5 [00:42<00:00,  8.47s/it]
+                 INFO     | >> Current task success rate: 0.8                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.9                                                                        eval_libero.py:264
+ 40%|████      | 4/10 [03:02<04:26, 44.33s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [09:48:37] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the ketchup and place it in the basket                                                                          
+10/08 [09:48:38] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [09:48:45] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 21                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 19 (90.5%)                                                                                eval_libero.py:256
+
+ 20%|██        | 1/5 [00:08<00:33,  8.44s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the ketchup and place it in the basket                                                                          
+10/08 [09:48:46] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [09:48:53] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 22                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 20 (90.9%)                                                                                eval_libero.py:256
+
+ 40%|████      | 2/5 [00:16<00:24,  8.13s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the ketchup and place it in the basket                                                                          
+10/08 [09:48:54] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [09:49:01] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 23                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 21 (91.3%)                                                                                eval_libero.py:256
+
+ 60%|██████    | 3/5 [00:24<00:16,  8.13s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the ketchup and place it in the basket                                                                          
+10/08 [09:49:02] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [09:49:11] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 24                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 22 (91.7%)                                                                                eval_libero.py:256
+
+ 80%|████████  | 4/5 [00:34<00:08,  8.93s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the ketchup and place it in the basket                                                                          
+10/08 [09:49:13] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [09:49:21] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 25                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 23 (92.0%)                                                                                eval_libero.py:256
+
+100%|██████████| 5/5 [00:43<00:00,  9.00s/it][A100%|██████████| 5/5 [00:43<00:00,  8.75s/it]
+                 INFO     | >> Current task success rate: 1.0                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.92                                                                       eval_libero.py:264
+ 50%|█████     | 5/10 [03:47<03:42, 44.53s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [09:49:22] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the tomato sauce and place it in the basket                                                                     
+10/08 [09:49:23] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [09:49:29] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 26                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 24 (92.3%)                                                                                eval_libero.py:256
+
+ 20%|██        | 1/5 [00:07<00:28,  7.06s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the tomato sauce and place it in the basket                                                                     
+10/08 [09:49:30] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [09:49:37] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 27                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 25 (92.6%)                                                                                eval_libero.py:256
+
+ 40%|████      | 2/5 [00:14<00:22,  7.58s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the tomato sauce and place it in the basket                                                                     
+10/08 [09:49:38] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [09:49:46] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 28                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 26 (92.9%)                                                                                eval_libero.py:256
+
+ 60%|██████    | 3/5 [00:24<00:16,  8.36s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the tomato sauce and place it in the basket                                                                     
+10/08 [09:49:47] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [09:49:55] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 29                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 27 (93.1%)                                                                                eval_libero.py:256
+
+ 80%|████████  | 4/5 [00:33<00:08,  8.69s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the tomato sauce and place it in the basket                                                                     
+10/08 [09:49:56] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [09:50:11] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 30                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 27 (90.0%)                                                                                eval_libero.py:256
+
+100%|██████████| 5/5 [00:49<00:00, 11.37s/it][A100%|██████████| 5/5 [00:49<00:00,  9.92s/it]
+                 INFO     | >> Current task success rate: 0.8                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.9                                                                        eval_libero.py:264
+ 60%|██████    | 6/10 [04:38<03:06, 46.61s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [09:50:12] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the butter and place it in the basket                                                                           
+10/08 [09:50:13] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [09:50:27] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 31                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 27 (87.1%)                                                                                eval_libero.py:256
+
+ 20%|██        | 1/5 [00:14<00:57, 14.42s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the butter and place it in the basket                                                                           
+10/08 [09:50:28] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [09:50:43] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 32                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 27 (84.4%)                                                                                eval_libero.py:256
+
+ 40%|████      | 2/5 [00:30<00:46, 15.38s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the butter and place it in the basket                                                                           
+10/08 [09:50:44] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [09:50:52] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 33                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 28 (84.8%)                                                                                eval_libero.py:256
+
+ 60%|██████    | 3/5 [00:39<00:24, 12.48s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the butter and place it in the basket                                                                           
+10/08 [09:50:53] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [09:51:00] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 34                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 29 (85.3%)                                                                                eval_libero.py:256
+
+ 80%|████████  | 4/5 [00:47<00:10, 10.75s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the butter and place it in the basket                                                                           
+10/08 [09:51:01] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [09:51:09] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 35                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 30 (85.7%)                                                                                eval_libero.py:256
+
+100%|██████████| 5/5 [00:56<00:00, 10.21s/it][A100%|██████████| 5/5 [00:56<00:00, 11.37s/it]
+                 INFO     | >> Current task success rate: 0.6                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.8571428571428571                                                         eval_libero.py:264
+ 70%|███████   | 7/10 [05:36<02:30, 50.32s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [09:51:10] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the milk and place it in the basket                                                                             
+10/08 [09:51:11] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [09:51:17] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 36                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 31 (86.1%)                                                                                eval_libero.py:256
+
+ 20%|██        | 1/5 [00:06<00:27,  6.78s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the milk and place it in the basket                                                                             
+10/08 [09:51:18] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [09:51:31] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 37                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 31 (83.8%)                                                                                eval_libero.py:256
+
+ 40%|████      | 2/5 [00:21<00:33, 11.24s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the milk and place it in the basket                                                                             
+10/08 [09:51:33] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [09:51:39] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 38                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 32 (84.2%)                                                                                eval_libero.py:256
+
+ 60%|██████    | 3/5 [00:28<00:19,  9.65s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the milk and place it in the basket                                                                             
+10/08 [09:51:40] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [09:51:51] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 39                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 33 (84.6%)                                                                                eval_libero.py:256
+
+ 80%|████████  | 4/5 [00:40<00:10, 10.49s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the milk and place it in the basket                                                                             
+10/08 [09:51:52] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [09:51:59] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 40                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 34 (85.0%)                                                                                eval_libero.py:256
+
+100%|██████████| 5/5 [00:48<00:00,  9.59s/it][A100%|██████████| 5/5 [00:48<00:00,  9.73s/it]
+                 INFO     | >> Current task success rate: 0.8                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.85                                                                       eval_libero.py:264
+ 80%|████████  | 8/10 [06:26<01:40, 50.13s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [09:52:00] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the chocolate pudding and place it in the basket                                                                
+10/08 [09:52:01] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [09:52:08] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 41                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 35 (85.4%)                                                                                eval_libero.py:256
+
+ 20%|██        | 1/5 [00:08<00:33,  8.42s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the chocolate pudding and place it in the basket                                                                
+10/08 [09:52:10] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [09:52:18] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 42                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 36 (85.7%)                                                                                eval_libero.py:256
+
+ 40%|████      | 2/5 [00:17<00:26,  8.88s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the chocolate pudding and place it in the basket                                                                
+10/08 [09:52:19] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [09:52:26] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 43                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 37 (86.0%)                                                                                eval_libero.py:256
+
+ 60%|██████    | 3/5 [00:25<00:17,  8.64s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the chocolate pudding and place it in the basket                                                                
+10/08 [09:52:27] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [09:52:34] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 44                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 38 (86.4%)                                                                                eval_libero.py:256
+
+ 80%|████████  | 4/5 [00:33<00:08,  8.34s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the chocolate pudding and place it in the basket                                                                
+10/08 [09:52:35] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [09:52:44] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 45                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 39 (86.7%)                                                                                eval_libero.py:256
+
+100%|██████████| 5/5 [00:43<00:00,  8.87s/it][A100%|██████████| 5/5 [00:43<00:00,  8.73s/it]
+                 INFO     | >> Current task success rate: 1.0                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.8666666666666667                                                         eval_libero.py:264
+ 90%|█████████ | 9/10 [07:10<00:48, 48.44s/it][Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /workspace/LIBERO/libero/libero/../datasets does not exist!
+
+  0%|          | 0/5 [00:00<?, ?it/s][A10/08 [09:52:45] INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the orange juice and place it in the basket                                                                     
+10/08 [09:52:46] INFO     | >> Starting episode 1...                                                                                  eval_libero.py:146
+10/08 [09:52:52] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 46                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 40 (87.0%)                                                                                eval_libero.py:256
+
+ 20%|██        | 1/5 [00:07<00:29,  7.28s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the orange juice and place it in the basket                                                                     
+10/08 [09:52:53] INFO     | >> Starting episode 2...                                                                                  eval_libero.py:146
+10/08 [09:53:00] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 47                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 41 (87.2%)                                                                                eval_libero.py:256
+
+ 40%|████      | 2/5 [00:15<00:23,  7.67s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the orange juice and place it in the basket                                                                     
+10/08 [09:53:01] INFO     | >> Starting episode 3...                                                                                  eval_libero.py:146
+10/08 [09:53:07] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 48                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 42 (87.5%)                                                                                eval_libero.py:256
+
+ 60%|██████    | 3/5 [00:22<00:14,  7.27s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the orange juice and place it in the basket                                                                     
+10/08 [09:53:08] INFO     | >> Starting episode 4...                                                                                  eval_libero.py:146
+10/08 [09:53:14] INFO     | >> Success: True                                                                                          eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 49                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 43 (87.8%)                                                                                eval_libero.py:256
+
+ 80%|████████  | 4/5 [00:29<00:07,  7.39s/it][A                 INFO     | >>                                                                                                        eval_libero.py:131
+                          Task: pick up the orange juice and place it in the basket                                                                     
+10/08 [09:53:16] INFO     | >> Starting episode 5...                                                                                  eval_libero.py:146
+10/08 [09:53:29] INFO     | >> Success: False                                                                                         eval_libero.py:254
+                 INFO     | >> # episodes completed so far: 50                                                                        eval_libero.py:255
+                 INFO     | >> # successes: 43 (86.0%)                                                                                eval_libero.py:256
+
+100%|██████████| 5/5 [00:44<00:00, 10.03s/it][A100%|██████████| 5/5 [00:44<00:00,  8.86s/it]
+                 INFO     | >> Current task success rate: 0.8                                                                         eval_libero.py:261
+                 INFO     | >> Current total success rate: 0.86                                                                       eval_libero.py:264
+100%|██████████| 10/10 [07:56<00:00, 47.50s/it]100%|██████████| 10/10 [07:56<00:00, 47.63s/it]
+                 INFO     | >> Total success rate: 0.86                                                                               eval_libero.py:268
+                 INFO     | >> Total episodes: 50                                                                                     eval_libero.py:271
+Exception ignored in: <function MjRenderContext.__del__ at 0x7bb5649492d0>
+Traceback (most recent call last):
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/utils/binding_utils.py", line 199, in __del__
+    self.gl_ctx.free()
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/renderers/context/egl_context.py", line 149, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE, EGL.EGL_NO_SURFACE, EGL.EGL_NO_CONTEXT)
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x7bb5423f9dc0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7bb5673a04c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7bb5673a04c0>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x7bb5673a09c0>,
+	),
+	result = 0
+)
+Exception ignored in: <function EGLGLContext.__del__ at 0x7bb564949120>
+Traceback (most recent call last):
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/renderers/context/egl_context.py", line 155, in __del__
+    self.free()
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/robosuite/renderers/context/egl_context.py", line 149, in free
+    EGL.eglMakeCurrent(EGL_DISPLAY, EGL.EGL_NO_SURFACE, EGL.EGL_NO_SURFACE, EGL.EGL_NO_CONTEXT)
+  File "/workspace/miniconda3/envs/libero/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+    raise self._errorClass(
+OpenGL.raw.EGL._errors.EGLError: EGLError(
+	err = EGL_NOT_INITIALIZED,
+	baseOperation = eglMakeCurrent,
+	cArguments = (
+		<OpenGL._opaque.EGLDisplay_pointer object at 0x7bb5423f9dc0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7bb5673a04c0>,
+		<OpenGL._opaque.EGLSurface_pointer object at 0x7bb5673a04c0>,
+		<OpenGL._opaque.EGLContext_pointer object at 0x7bb5673a09c0>,
+	),
+	result = 0
+)
