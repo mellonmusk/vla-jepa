@@ -14,6 +14,7 @@ VLA-JEPA 사전학습 체크포인트를 LIBERO에 post-training할 때, action 
 | `examples/LIBERO/eval_libero.py` | `task_stride` 옵션(N번째 태스크만 평가), LIBERO-Plus용 경로 문자열 변환 |
 | `scripts/configs/vlajepa_libero_A.yaml` | 기법 A 설정 |
 | `scripts/configs/vlajepa_libero_B.yaml` | 기법 B 설정 |
+| `scripts/configs/vlajepa_libero_B_r2.yaml` | 기법 B에서 LoRA rank만 2로 줄인 설정 (추가 실험) |
 | `examples/LIBERO/eval_one.sh` | GPU 1장으로 체크포인트 1개, suite 1개를 평가 |
 
 ## 두 기법의 차이
