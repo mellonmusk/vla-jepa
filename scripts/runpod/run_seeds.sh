@@ -10,6 +10,7 @@ export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 unset LIBERO_HOME SIM_PYTHON
 
 RUNS=${RUNS:-"A_s43 B_s43 A_s44 B_s44"}   # seed 43 first, so an early stop still leaves a complete A/B pair
+EVAL=${EVAL:-1}                              # EVAL=0: train only (evaluation done elsewhere)
 
 for r in $RUNS; do
   run=libero_$r
@@ -32,6 +33,7 @@ for r in $RUNS; do
     rm -rf /workspace/runs/$run/final_model   # same weights as steps_30000, saves 6 GB
   fi
 
+  if [ "$EVAL" = "0" ]; then echo "== skip all evals for $run (EVAL=0)"; continue; fi
   for suite in libero_spatial libero_object libero_goal libero_10; do
     log=results/$suite/${run}_steps_30000_pytorch_model.pt/eval.log
     if grep -q "Total episodes" "$log" 2>/dev/null; then echo "== skip eval $run $suite"; continue; fi
